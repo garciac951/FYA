@@ -1,0 +1,87 @@
+{
+  "_comment": "Topic pool for the exploration phase. Raise 'weight' on topics that perform well, set it to 0 to pause one. youtube_category ids: 2 Autos, 15 Pets, 17 Sports, 22 People & Blogs, 26 Howto & Style, 27 Education, 28 Science & Tech.",
+  "topics": [
+    {
+      "id": "fly-fishing",
+      "name": "Fly fishing",
+      "weight": 1,
+      "youtube_category": "17",
+      "angles": ["beginner mistakes", "knot or casting tip", "reading the water", "fly selection by season", "gear myths", "surprising trout or bass behavior"],
+      "hashtags": ["#flyfishing", "#fishing", "#outdoors"]
+    },
+    {
+      "id": "mechanics",
+      "name": "Car and truck mechanics",
+      "weight": 1,
+      "youtube_category": "2",
+      "angles": ["DIY maintenance that saves money", "warning signs before something breaks", "how a part actually works", "myths mechanics hear", "tool tip"],
+      "hashtags": ["#mechanic", "#cartips", "#diy"]
+    },
+    {
+      "id": "bermuda-grass-texas",
+      "name": "Bermuda grass lawn care in Texas",
+      "weight": 1,
+      "youtube_category": "26",
+      "angles": ["what to do this month in Texas", "mowing height and frequency", "watering in Texas heat and water restrictions", "fertilizer timing", "weeds and scalping", "fixing bare spots"],
+      "hashtags": ["#lawncare", "#bermudagrass", "#texas"]
+    },
+    {
+      "id": "java-coding",
+      "name": "Java programming",
+      "weight": 1,
+      "youtube_category": "28",
+      "angles": ["one modern Java feature in 45 seconds", "common bug and fix", "interview question", "performance gotcha", "clean code tip"],
+      "hashtags": ["#java", "#coding", "#programming"]
+    },
+    {
+      "id": "raising-a-boy",
+      "name": "Raising a boy (dad perspective)",
+      "weight": 1,
+      "youtube_category": "22",
+      "angles": ["building confidence", "teaching responsibility", "handling big emotions", "screen time", "dad-son activities", "life skills by age"],
+      "hashtags": ["#parenting", "#dadlife", "#raisingboys"]
+    },
+    {
+      "id": "cooking",
+      "name": "Cooking (grill, smoker, weeknight meals)",
+      "weight": 1,
+      "youtube_category": "26",
+      "angles": ["one technique that levels up a dish", "brisket and smoking tips", "food science fact", "kitchen hack", "common cooking mistake"],
+      "hashtags": ["#cooking", "#bbq", "#recipe"]
+    },
+    {
+      "id": "basketball",
+      "name": "Basketball",
+      "weight": 1,
+      "youtube_category": "17",
+      "angles": ["wild stat or record", "rule most fans get wrong", "history moment", "skill drill tip", "strategy explained simply"],
+      "hashtags": ["#basketball", "#nba", "#hoops"]
+    },
+    {
+      "id": "football",
+      "name": "American football",
+      "weight": 1,
+      "youtube_category": "17",
+      "angles": ["rule most fans get wrong", "play or formation explained simply", "wild stat or record", "history moment", "Texas high school or college football lore"],
+      "hashtags": ["#football", "#nfl", "#collegefootball"]
+    },
+    {
+      "id": "beer",
+      "name": "Beer styles and drinking culture (21+)",
+      "weight": 1,
+      "youtube_category": "26",
+      "angles": ["beer style explained", "how a beer is made", "history of a style or brewery tradition", "food pairing", "glassware and serving myths"],
+      "hashtags": ["#beer", "#craftbeer", "#beertok"],
+      "guardrails": "Audience is adults 21+. Educational and cultural tone only. Never encourage heavy, binge, underage drinking or drinking and driving. No health benefit claims. Do not name or promote specific alcohol brands as endorsements."
+    },
+    {
+      "id": "dogs",
+      "name": "Dogs",
+      "weight": 1,
+      "youtube_category": "15",
+      "angles": ["why dogs do a weird behavior", "training tip", "breed fact", "health warning sign owners miss", "hot-weather safety"],
+      "hashtags": ["#dogs", "#dogtraining", "#doglover"],
+      "guardrails": "Health content must be general and tell owners to see a vet for anything serious."
+    }
+  ]
+}

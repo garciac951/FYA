@@ -1,0 +1,81 @@
+name: Daily Short
+
+on:
+  schedule:
+    # Once a day at 15:23 UTC (about 9-10am in Texas). Videos upload as private
+    # or scheduled depending on UPLOAD_MODE, so the run time isn't the publish time.
+    - cron: "23 15 * * *"
+  workflow_dispatch:
+    inputs:
+      topic:
+        description: "Topic id from config/topics.json (blank = automatic rotation)"
+        required: false
+        default: ""
+      upload:
+        description: "Upload mode for this run"
+        required: false
+        default: ""
+        type: choice
+        options: ["", "none", "private", "scheduled", "public"]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: daily-short
+  cancel-in-progress: false
+
+jobs:
+  make-short:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+      PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
+      ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
+      OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+      YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+      YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+      YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+      FYA_CHANNEL_NAME: ${{ vars.FYA_CHANNEL_NAME }}
+      FYA_MODEL: ${{ vars.FYA_MODEL }}
+      TTS_PROVIDER: ${{ vars.TTS_PROVIDER }}
+      TTS_VOICE: ${{ vars.TTS_VOICE }}
+      UPLOAD_MODE: ${{ inputs.upload || vars.UPLOAD_MODE || 'none' }}
+      PUBLISH_HOUR_UTC: ${{ vars.PUBLISH_HOUR_UTC }}
+      YT_SYNTHETIC_MEDIA: ${{ vars.YT_SYNTHETIC_MEDIA }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install ffmpeg and fonts
+        run: sudo apt-get update -q && sudo apt-get install -y -q ffmpeg fonts-inter
+
+      - run: pip install -r requirements.txt
+
+      - name: Make the Short
+        run: |
+          if [ -n "${{ inputs.topic }}" ]; then
+            python -m fya --topic "${{ inputs.topic }}"
+          else
+            python -m fya
+          fi
+
+      - name: Keep the video as a downloadable artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: short-${{ github.run_number }}
+          path: output/
+          retention-days: 14
+
+      - name: Save posting history
+        run: |
+          git config user.name "fya-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/history.json
+          git diff --cached --quiet || git commit -m "Log Short from run ${{ github.run_number }}"
+          git push
