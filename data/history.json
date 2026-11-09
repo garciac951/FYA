@@ -16,6 +16,27 @@
           "file": "output/20261109-0412-how-often-to-mow-bermuda-it-s-not-weekly/short-es.mp4"
         }
       }
+    },
+    {
+      "date": "2026-11-09T05:15:55+00:00",
+      "topic": "java-coding",
+      "title": "Why 127 == 127 but 128 != 128 in Java",
+      "idea": null,
+      "upload_mode": "private",
+      "versions": {
+        "en": {
+          "title": "Why 127 == 127 but 128 != 128 in Java",
+          "file": "output/20261109-0515-why-127-127-but-128-128-in-java/short-en.mp4",
+          "youtube_id": "OVSeryyus1c",
+          "url": "https://youtube.com/shorts/OVSeryyus1c"
+        },
+        "es": {
+          "title": "Por qué en Java 127 == 127 pero 128 no",
+          "file": "output/20261109-0515-why-127-127-but-128-128-in-java/short-es.mp4",
+          "youtube_id": "bOkHblLdKL4",
+          "url": "https://youtube.com/shorts/bOkHblLdKL4"
+        }
+      }
     }
   ]
 }
