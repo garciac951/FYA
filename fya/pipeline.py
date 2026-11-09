@@ -51,8 +51,11 @@ def run(settings: Settings, *, topic_id: str | None = None, demo: bool = False,
     (out_dir / "script.json").write_text(script.model_dump_json(indent=2))
 
     # Footage is shared by every language version.
-    used: set[int] = set()
-    clips = [get_clip(seg.visual_query, work / f"clip{i:02d}.mp4", settings.pexels_api_key, used)
+    if not (settings.pixabay_api_key or settings.pexels_api_key):
+        log.warning("No PIXABAY_API_KEY or PEXELS_API_KEY set: using gradient backgrounds")
+    used: set = set()
+    clips = [get_clip(seg.visual_query, work / f"clip{i:02d}.mp4", used,
+                      pixabay_key=settings.pixabay_api_key, pexels_key=settings.pexels_api_key)
              for i, seg in enumerate(script.segments)]
 
     record = {

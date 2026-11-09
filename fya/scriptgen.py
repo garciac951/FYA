@@ -59,7 +59,7 @@ Spell numbers the way they should be spoken when it matters ("three hundred degr
 - English narration: 85-125 words total. End with a one-line payoff or a natural loop back to the hook, \
 not "like and subscribe".
 - Split the narration into 5-8 segments of one or two sentences. For each, give visual_query: a 2-4 word \
-English stock-footage search that a site like Pexels will actually have (e.g. "trout river close", \
+English stock-footage search that a free library like Pixabay or Pexels will actually have (e.g. "trout river close", \
 "mechanic engine bay", "smartphone settings screen"). Concrete nouns, no people's names, no brands, no text.
 - title: under 60 characters, curiosity-driven but honest (no clickbait the video doesn't pay off). No hashtags.
 - description: 1-2 sentences expanding on the tip, then a blank line, then 3 relevant hashtags including #shorts.

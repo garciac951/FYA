@@ -45,6 +45,7 @@ class Settings:
     openai_api_key: str = field(default_factory=lambda: _env("OPENAI_API_KEY"))
 
     # Visuals
+    pixabay_api_key: str = field(default_factory=lambda: _env("PIXABAY_API_KEY"))
     pexels_api_key: str = field(default_factory=lambda: _env("PEXELS_API_KEY"))
 
     # Upload: none | private | scheduled | public

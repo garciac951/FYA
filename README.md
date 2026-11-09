@@ -4,7 +4,7 @@ Makes one vertical Short per day, in **English and Spanish**, and (optionally) u
 
 ```
 topic rotation ─▶ Claude writes the script in English + a natural Spanish adaptation
-      ─▶ Pexels stock footage (shared by both versions)
+      ─▶ Pixabay (or Pexels) stock footage (shared by both versions)
       ─▶ for each language: voiceover ─▶ ffmpeg 1080x1920 + word-by-word captions
       ─▶ YouTube upload (none / private / scheduled / public) ─▶ data/history.json
 ```

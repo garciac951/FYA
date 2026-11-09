@@ -25,7 +25,8 @@ You do these steps once. After that a GitHub Action makes a Short every day.
 | Secret | Where | Cost |
 |---|---|---|
 | `ANTHROPIC_API_KEY` | console.anthropic.com → API Keys | About 2-5 cents per script |
-| `PEXELS_API_KEY` | pexels.com/api → sign up → key shown instantly | Free |
+| `PIXABAY_API_KEY` | pixabay.com → sign up (free) → open pixabay.com/api/docs → your key is shown under "Parameters" next to `key` | Free |
+| `PEXELS_API_KEY` (optional) | pexels.com/api. New keys were paused as of Nov 2026; used alongside Pixabay if you have one | Free |
 | `ELEVENLABS_API_KEY` (optional) | elevenlabs.io → Profile → API key | From about $5 a month. Sounds better than the free voice |
 
 The default voice (`TTS_PROVIDER=edge`) is free and needs no key.
@@ -62,7 +63,7 @@ uses about 3,200, so there's room for up to 3 Shorts a day in both languages.
 
 Repo → **Settings → Secrets and variables → Actions**.
 
-**Secrets:** `ANTHROPIC_API_KEY`, `PEXELS_API_KEY`, `YT_CLIENT_ID`, `YT_CLIENT_SECRET`, `YT_REFRESH_TOKEN`,
+**Secrets:** `ANTHROPIC_API_KEY`, `PIXABAY_API_KEY`, `YT_CLIENT_ID`, `YT_CLIENT_SECRET`, `YT_REFRESH_TOKEN`,
 `YT_REFRESH_TOKEN_ES` (the Spanish channel; leave it out to post both versions to one channel), and
 `ELEVENLABS_API_KEY` if used.
 
