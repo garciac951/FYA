@@ -64,3 +64,29 @@ def pick_topic(topics: list[Topic], history: list[dict], topic_id: str | None = 
 
 def recent_titles(history: list[dict], topic_id: str, n: int = 15) -> list[str]:
     return [v["title"] for v in history if v["topic"] == topic_id][-n:]
+
+
+
+CUSTOM_GUARDRAILS = ("This idea came straight from the channel owner. If it touches health, legal, financial or "
+                     "safety advice, keep it general and point viewers to a professional.")
+
+
+def custom_topic(name: str) -> Topic:
+    return Topic(id="custom", name=name, youtube_category="22", guardrails=CUSTOM_GUARDRAILS)
+
+
+def resolve_request(topics: list[Topic], request: str) -> tuple[Topic | None, str | None]:
+    """What was typed into the topic box -> (topic, idea).
+
+    A topic id ("dogs") returns that topic and no idea. Anything else is the owner's own idea; the
+    topic is returned as None so the scriptwriter picks the best-fitting one from the list.
+    """
+    request = request.strip()
+    for t in topics:
+        if request.lower() == t.id:
+            return t, None
+    return None, request
+
+
+def recent_titles_any(history: list[dict], n: int = 40) -> list[str]:
+    return [v["title"] for v in history][-n:]

@@ -8,7 +8,7 @@ on:
   workflow_dispatch:
     inputs:
       topic:
-        description: "Topic id from config/topics.json (blank = automatic rotation)"
+        description: "Topic (e.g. dogs, phone-tips) or your own idea (e.g. how often to mow Bermuda). Blank = automatic"
         required: false
         default: ""
       upload:
@@ -64,9 +64,11 @@ jobs:
       - run: pip install -r requirements.txt
 
       - name: Make the Short
+        env:
+          TOPIC_REQUEST: ${{ inputs.topic }}
         run: |
-          if [ -n "${{ inputs.topic }}" ]; then
-            python -m fya --topic "${{ inputs.topic }}"
+          if [ -n "$TOPIC_REQUEST" ]; then
+            python -m fya --topic "$TOPIC_REQUEST"
           else
             python -m fya
           fi

@@ -7,7 +7,7 @@ from dataclasses import dataclass
 import anthropic
 from pydantic import BaseModel
 
-from .topics import Topic
+from .topics import CUSTOM_GUARDRAILS, Topic
 
 
 class Segment(BaseModel):
@@ -17,6 +17,7 @@ class Segment(BaseModel):
 
 
 class ShortScript(BaseModel):
+    topic_id: str
     title: str
     description: str
     tags: list[str]
@@ -64,6 +65,7 @@ English stock-footage search that a free library like Pixabay or Pexels will act
 - title: under 60 characters, curiosity-driven but honest (no clickbait the video doesn't pay off). No hashtags.
 - description: 1-2 sentences expanding on the tip, then a blank line, then 3 relevant hashtags including #shorts.
 - tags: 5-10 lowercase search phrases.
+- topic_id: the id of the topic this Short belongs to, exactly as given in the request.
 
 Spanish version (narration_es, title_es, description_es, tags_es):
 - Adapt, don't translate word for word. Write natural, conversational Spanish as spoken by Mexican and \
@@ -80,18 +82,40 @@ Spanish word would sound stiff.
 Every Short should feel different from the channel's earlier ones in angle, hook style and wording."""
 
 
-def generate_script(topic: Topic, avoid_titles: list[str], *, model: str,
-                    channel_en: str, channel_es: str) -> ShortScript:
-    angle = random.choice(topic.angles) if topic.angles else "a useful tip"
-    user = [
-        f"Topic: {topic.name}",
-        f"Angle for this one: {angle}",
-        f"Suggested hashtags: {' '.join(topic.hashtags)}",
-    ]
-    if topic.guardrails:
-        user.append(f"Guardrails for this topic: {topic.guardrails}")
+def generate_script(topic: Topic | None, avoid_titles: list[str], *, model: str,
+                    channel_en: str, channel_es: str, idea: str | None = None,
+                    catalog: list[Topic] | None = None) -> ShortScript:
+    """Write a Short for `topic` (rotation), or for the owner's own `idea`.
+
+    With an idea and no topic, the model picks the best-fitting topic id from `catalog` (or "custom").
+    """
+    if topic is not None:
+        user = [f"Topic: {topic.name} (topic_id: {topic.id})"]
+        if idea:
+            user.append(f"The channel owner asked for this specific idea, so build the Short around it: {idea}")
+        else:
+            user.append(f"Angle for this one: {random.choice(topic.angles) if topic.angles else 'a useful tip'}")
+        if topic.hashtags:
+            user.append(f"Suggested hashtags: {' '.join(topic.hashtags)}")
+        if topic.guardrails:
+            user.append(f"Guardrails for this topic: {topic.guardrails}")
+        history_label = "Already posted on this topic"
+    else:
+        lines = []
+        for t in catalog or []:
+            line = f"- {t.id}: {t.name}"
+            if t.guardrails:
+                line += f" | guardrails: {t.guardrails}"
+            lines.append(line)
+        user = [
+            f"The channel owner asked for this specific idea, so build the Short around it: {idea}",
+            "Set topic_id to the channel topic it fits best, and follow that topic's guardrails. Only use "
+            '"custom" if it truly fits none of them.\nChannel topics:\n' + "\n".join(lines),
+            f'If you choose "custom": {CUSTOM_GUARDRAILS}',
+        ]
+        history_label = "Recently posted on the channel"
     if avoid_titles:
-        user.append("Already posted on this topic (do not repeat these ideas):\n- " + "\n- ".join(avoid_titles))
+        user.append(f"{history_label} (do not repeat these ideas):\n- " + "\n- ".join(avoid_titles))
     user.append("Write the Short.")
 
     client = anthropic.Anthropic()
@@ -109,7 +133,7 @@ def generate_script(topic: Topic, avoid_titles: list[str], *, model: str,
         output_format=ShortScript,
     )
     if response.stop_reason == "refusal":
-        raise RuntimeError(f"Script request was declined for topic {topic.id}")
+        raise RuntimeError(f"Script request was declined ({topic.id if topic else idea})")
     if response.stop_reason == "max_tokens" or response.parsed_output is None:
         raise RuntimeError(f"Script generation did not finish (stop_reason={response.stop_reason})")
 
@@ -126,6 +150,7 @@ def demo_script() -> ShortScript:
     """A canned script so the pipeline can be tested without an API key."""
     S = Segment
     return ShortScript(
+        topic_id="bermuda-grass-texas",
         title="You're mowing your Bermuda grass too high",
         description="Bermuda grass grows thick when it's kept short and mowed often.\n\n#lawncare #bermudagrass #shorts",
         tags=["bermuda grass", "lawn care", "texas lawn", "mowing height", "lawn tips"],

@@ -12,7 +12,8 @@ from .topics import load_topics
 
 def main() -> None:
     p = argparse.ArgumentParser(prog="fya", description="Make (and optionally upload) one YouTube Short.")
-    p.add_argument("--topic", help="Topic id from config/topics.json (default: automatic rotation)")
+    p.add_argument("--topic", help="A topic id from config/topics.json, or your own idea in plain words "
+                                   "(default: automatic rotation)")
     p.add_argument("--demo", action="store_true", help="Use a built-in script; no Claude API key needed")
     p.add_argument("--upload", choices=["none", "private", "scheduled", "public"],
                    help="Override UPLOAD_MODE for this run")
@@ -28,7 +29,7 @@ def main() -> None:
             print(f"{t.id:24} weight={t.weight:<4} {t.name}")
         return
 
-    record = run(settings, topic_id=args.topic, demo=args.demo, upload_mode=args.upload, keep_work=args.keep_work)
+    record = run(settings, topic_request=args.topic, demo=args.demo, upload_mode=args.upload, keep_work=args.keep_work)
     print(json.dumps(record, indent=2, ensure_ascii=False))
 
 

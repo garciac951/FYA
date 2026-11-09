@@ -10,7 +10,8 @@ from datetime import datetime, timezone
 from .config import Settings
 from .render import RenderSegment, render_short
 from .scriptgen import demo_script, generate_script
-from .topics import load_history, load_topics, pick_topic, recent_titles, save_history
+from .topics import (custom_topic, load_history, load_topics, pick_topic, recent_titles,
+                     recent_titles_any, resolve_request, save_history)
 from .tts import synthesize
 from .upload import next_publish_time, upload_video
 from .visuals import get_clip
@@ -24,7 +25,7 @@ def _slug(text: str) -> str:
     return re.sub(r"[^a-z0-9]+", "-", text.lower()).strip("-")[:50]
 
 
-def run(settings: Settings, *, topic_id: str | None = None, demo: bool = False,
+def run(settings: Settings, *, topic_request: str | None = None, demo: bool = False,
         upload_mode: str | None = None, keep_work: bool = False) -> dict:
     upload_mode = upload_mode or settings.upload_mode
     if upload_mode not in {"none", "private", "scheduled", "public"}:
@@ -36,12 +37,24 @@ def run(settings: Settings, *, topic_id: str | None = None, demo: bool = False,
 
     topics = load_topics(settings.topics_file)
     history = load_history(settings.history_file)
-    topic = pick_topic(topics, history, "bermuda-grass-texas" if demo and not topic_id else topic_id)
-    log.info("Topic: %s", topic.name)
+    topic, idea = None, None
+    if topic_request and topic_request.strip():
+        topic, idea = resolve_request(topics, topic_request)
+    elif demo:
+        topic = pick_topic(topics, history, "bermuda-grass-texas")
+    else:
+        topic = pick_topic(topics, history)
+    log.info("Topic: %s%s", topic.name if topic else "(writer picks)", f" | idea: {idea}" if idea else "")
 
-    script = demo_script() if demo else generate_script(
-        topic, recent_titles(history, topic.id), model=settings.anthropic_model,
-        channel_en=settings.channel_name, channel_es=settings.channel_name_es)
+    if demo:
+        script = demo_script()
+    else:
+        avoid = recent_titles(history, topic.id) if topic else recent_titles_any(history)
+        script = generate_script(topic, avoid, model=settings.anthropic_model, channel_en=settings.channel_name,
+                                 channel_es=settings.channel_name_es, idea=idea, catalog=topics)
+    if topic is None:
+        topic = next((t for t in topics if t.id == script.topic_id), None) or custom_topic(idea or "custom")
+        log.info("Writer filed the idea under: %s", topic.id)
     log.info("Title: %s | %s", script.title, script.title_es)
 
     stamp = datetime.now(timezone.utc).strftime("%Y%m%d-%H%M")
@@ -62,6 +75,7 @@ def run(settings: Settings, *, topic_id: str | None = None, demo: bool = False,
         "date": datetime.now(timezone.utc).isoformat(timespec="seconds"),
         "topic": topic.id,
         "title": script.title,
+        "idea": idea,
         "upload_mode": upload_mode,
         "versions": {},
     }
