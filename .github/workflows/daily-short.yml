@@ -74,11 +74,13 @@ jobs:
           fi
 
       - name: Keep the video as a downloadable artifact
+        if: always()
         uses: actions/upload-artifact@v4
         with:
           name: short-${{ github.run_number }}
           path: output/
           retention-days: 14
+          if-no-files-found: ignore
 
       - name: Save posting history
         run: |

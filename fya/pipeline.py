@@ -152,7 +152,11 @@ def run(settings: Settings, *, topic_request: str | None = None, demo: bool = Fa
     if not demo and record["versions"]:
         history.append(record)
         save_history(settings.history_file, history)
-    if not keep_work:
+    if errors and not keep_work:
+        # Keep the small files (script, audio, captions) for debugging; drop the big video clips.
+        for big in list(work.rglob("*.mp4")):
+            big.unlink(missing_ok=True)
+    elif not keep_work:
         shutil.rmtree(work, ignore_errors=True)
     if errors:
         raise RuntimeError("Some versions failed: " + "; ".join(errors))

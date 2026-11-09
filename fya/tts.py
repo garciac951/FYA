@@ -3,13 +3,17 @@ from __future__ import annotations
 
 import asyncio
 import base64
+import logging
 import subprocess
+import time
 from dataclasses import dataclass
 from pathlib import Path
 
 import requests
 
 from .media import probe_duration
+
+log = logging.getLogger(__name__)
 
 
 @dataclass
@@ -67,7 +71,21 @@ def _edge(text: str, voice: str, out: Path) -> list[Word]:
                     words.append(Word(chunk["text"], start, start + chunk["duration"] / 1e7))
         return words
 
-    return asyncio.run(run())
+    # The free service sometimes returns no audio (throttling or a hiccup). Retry with backoff.
+    last_error: Exception | None = None
+    for attempt in range(5):
+        if attempt:
+            time.sleep(3 * attempt * attempt)  # 3s, 12s, 27s, 48s
+        try:
+            words = asyncio.run(run())
+            if out.exists() and out.stat().st_size > 0:
+                time.sleep(0.5)  # be gentle: many small requests in a row get throttled
+                return words
+            last_error = RuntimeError("empty audio")
+        except Exception as e:  # edge_tts raises NoAudioReceived, WebSocketError, aiohttp errors...
+            last_error = e
+        log.warning("Edge TTS attempt %d failed (%s) for %r", attempt + 1, last_error, text[:60])
+    raise RuntimeError(f"Edge TTS returned no audio after 5 tries for {text[:60]!r}") from last_error
 
 
 def _elevenlabs(text: str, voice: str, api_key: str, out: Path) -> list[Word]:

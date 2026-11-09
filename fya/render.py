@@ -6,7 +6,7 @@ from dataclasses import dataclass
 from pathlib import Path
 
 from .captions import build_ass
-from .media import probe_duration, run_ffmpeg
+from .media import loudness_gain_db, probe_duration, run_ffmpeg
 from .tts import Speech, Word
 
 W, H, FPS = 1080, 1920, 30
@@ -71,12 +71,15 @@ def render_short(segments: list[RenderSegment], out: Path, work: Path, *,
 
     inputs = ["-i", str(video), "-i", str(narration)]
     music = sorted(p for p in (music_dir.glob("*") if music_dir else []) if p.suffix.lower() in {".mp3", ".m4a", ".wav", ".ogg"})
+    # Level the voice to about -14 LUFS (YouTube's loudness) with a constant gain and a peak limiter.
+    gain = loudness_gain_db(narration)
+    voice = f"[1:a]volume={gain:.2f}dB,alimiter=limit=0.84:level=0"
     if music:
         inputs += ["-stream_loop", "-1", "-i", str(random.choice(music))]
-        afilter = ("[2:a]volume=0.10,afade=t=out:st={end:.2f}:d=1[m];"
-                   "[1:a][m]amix=inputs=2:duration=first:normalize=0,loudnorm=I=-14:TP=-1.5[a]").format(end=max(0, t - 1))
+        afilter = (f"{voice}[n];[2:a]volume=0.10,afade=t=out:st={max(0, t - 1):.2f}:d=1[m];"
+                   "[n][m]amix=inputs=2:duration=first:normalize=0,alimiter=limit=0.84:level=0[a]")
     else:
-        afilter = "[1:a]loudnorm=I=-14:TP=-1.5[a]"
+        afilter = f"{voice}[a]"
     vfilter = f"[0:v]subtitles='{ass.resolve()}'[v]"
 
     run_ffmpeg([*inputs, "-filter_complex", f"{vfilter};{afilter}", "-map", "[v]", "-map", "[a]",
