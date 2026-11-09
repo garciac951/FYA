@@ -1,0 +1,83 @@
+{
+  "topic_id": "football",
+  "title": "The Football Huddle Was Invented by Deaf Players",
+  "description": "In the 1890s, Gallaudet University's deaf football team started huddling to hide their sign language play calls from opponents who could read them. The rest of football copied it.\n\n#football #collegefootball #shorts",
+  "tags": [
+    "football history",
+    "football huddle origin",
+    "gallaudet huddle",
+    "who invented the huddle",
+    "college football history",
+    "deaf football team",
+    "american football facts",
+    "nfl history"
+  ],
+  "title_es": "El huddle lo inventaron jugadores sordos",
+  "description_es": "En la década de 1890, el equipo de futbol americano de Gallaudet, una universidad para sordos, empezó a hacer huddle para esconder sus señas. Hoy todo el futbol americano lo usa.\n\n#futbolamericano #historia #shorts",
+  "tags_es": [
+    "historia del futbol americano",
+    "origen del huddle",
+    "quién inventó el huddle",
+    "universidad gallaudet",
+    "futbol americano sordos",
+    "datos de futbol americano",
+    "nfl historia",
+    "futbol americano colegial"
+  ],
+  "segments": [
+    {
+      "narration": "Every huddle in football exists because of a team that couldn't hear the play call.",
+      "narration_es": "Cada huddle que ves en el futbol americano existe gracias a un equipo que no podía escuchar las jugadas.",
+      "visual_queries": [
+        "football team huddle",
+        "football players huddle",
+        "american football game"
+      ]
+    },
+    {
+      "narration": "In the eighteen nineties, Gallaudet University was a college for deaf students, and its football team called plays in sign language.",
+      "narration_es": "Allá por mil ochocientos noventa, Gallaudet era una universidad para estudiantes sordos, y su equipo se pasaba las jugadas en lenguaje de señas.",
+      "visual_queries": [
+        "sign language hands",
+        "hands signing conversation",
+        "old university building"
+      ]
+    },
+    {
+      "narration": "That worked fine against hearing teams. But against other deaf schools, the opponents could read every signal from across the field.",
+      "narration_es": "Contra equipos oyentes, eso funcionaba perfecto. Pero contra otras escuelas para sordos, los rivales leían cada seña desde el otro lado del campo.",
+      "visual_queries": [
+        "football line of scrimmage",
+        "football players lined up",
+        "football field"
+      ]
+    },
+    {
+      "narration": "So quarterback Paul Hubbard had an idea. He pulled his teammates into a tight circle, shoulders facing out, and signed the play where nobody else could see.",
+      "narration_es": "Entonces el quarterback Paul Hubbard tuvo una idea. Juntó a sus compañeros en un círculo cerrado, de espaldas hacia afuera, y hacía las señas donde nadie más podía verlas.",
+      "visual_queries": [
+        "quarterback in huddle",
+        "football huddle closeup",
+        "football team circle"
+      ]
+    },
+    {
+      "narration": "Other teams noticed, and the huddle spread through college football and eventually the pros.",
+      "narration_es": "Otros equipos se dieron cuenta, y el huddle se regó por todo el futbol colegial y después llegó a los profesionales.",
+      "visual_queries": [
+        "college football stadium",
+        "football stadium crowd",
+        "football stadium"
+      ]
+    },
+    {
+      "narration": "So next time a team huddles up, remember it started as a way to hide hands, not voices.",
+      "narration_es": "Así que la próxima vez que veas un huddle, acuérdate: nació para esconder las manos, no las voces.",
+      "visual_queries": [
+        "football players breaking huddle",
+        "football team huddle",
+        "american football"
+      ]
+    }
+  ]
+}

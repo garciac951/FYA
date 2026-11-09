@@ -75,6 +75,25 @@
           "url": "https://youtube.com/shorts/Bzl9NKZnKXc"
         }
       }
+    },
+    {
+      "date": "2026-11-09T23:48:45+00:00",
+      "topic": "football",
+      "title": "The Football Huddle Was Invented by Deaf Players",
+      "idea": null,
+      "run": "8",
+      "redo_of": null,
+      "upload_mode": "none",
+      "versions": {
+        "en": {
+          "title": "The Football Huddle Was Invented by Deaf Players",
+          "file": "output/20261109-2348-the-football-huddle-was-invented-by-deaf-players/short-en.mp4"
+        },
+        "es": {
+          "title": "El huddle lo inventaron jugadores sordos",
+          "file": "output/20261109-2348-the-football-huddle-was-invented-by-deaf-players/short-es.mp4"
+        }
+      }
     }
   ]
 }
