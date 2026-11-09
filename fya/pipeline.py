@@ -25,6 +25,31 @@ def _slug(text: str) -> str:
     return re.sub(r"[^a-z0-9]+", "-", text.lower()).strip("-")[:50]
 
 
+CATEGORY_NAMES = {
+    "2": "Autos & Vehicles", "15": "Pets & Animals", "17": "Sports", "19": "Travel & Events",
+    "22": "People & Blogs", "24": "Entertainment", "26": "Howto & Style", "27": "Education",
+    "28": "Science & Technology",
+}
+
+
+def upload_sheet(loc, topic, channel: str) -> str:
+    """Everything needed to fill in YouTube Studio's upload form by hand."""
+    adult = topic.id == "beer"
+    return (
+        f"CHANNEL: {channel}\n\n"
+        f"TITLE\n{loc.title}\n\n"
+        f"DESCRIPTION\n{loc.description}\n\n"
+        f"TAGS (under Show more)\n{', '.join(loc.tags)}\n\n"
+        "SETTINGS\n"
+        "Audience: No, it's not made for kids\n"
+        f"Age restriction: {'YES - restrict to viewers over 18' if adult else 'No'}\n"
+        "Altered content: No\n"
+        f"Video language: {'Spanish' if loc.lang == 'es' else 'English'}\n"
+        f"Category: {CATEGORY_NAMES.get(topic.youtube_category, 'People & Blogs')}\n"
+        "Comments: On, hold potentially inappropriate comments for review\n"
+    )
+
+
 def run(settings: Settings, *, topic_request: str | None = None, demo: bool = False,
         upload_mode: str | None = None, keep_work: bool = False) -> dict:
     upload_mode = upload_mode or settings.upload_mode
@@ -96,9 +121,7 @@ def run(settings: Settings, *, topic_request: str | None = None, demo: bool = Fa
                                  brand=settings.channel(lang), music_dir=settings.music_dir)
             log.info("[%s] Rendered %s", lang, video)
             # Copy-paste sheet for posting by hand.
-            video.with_suffix(".txt").write_text(
-                f"TITLE\n{loc.title}\n\nDESCRIPTION\n{loc.description}\n\nTAGS\n{', '.join(loc.tags)}\n",
-                encoding="utf-8")
+            video.with_suffix(".txt").write_text(upload_sheet(loc, topic, settings.channel(lang)), encoding="utf-8")
             version = {"title": loc.title, "file": str(video.relative_to(settings.output_dir.parent))}
 
             if upload_mode != "none":
