@@ -1,0 +1,102 @@
+{
+  "topic_id": "fly-fishing",
+  "title": "Where Colorado Trout Still Eat in Winter",
+  "description": "Tailwater rivers below dams stay open all winter in Colorado. Fish midday, go tiny with midges, and target slow, deep runs.\n\n#shorts #flyfishing #colorado",
+  "tags": [
+    "winter fly fishing",
+    "colorado fly fishing",
+    "tailwater fishing",
+    "midge fishing",
+    "winter trout",
+    "south platte river",
+    "frying pan river",
+    "nymph fishing tips",
+    "cold weather fishing"
+  ],
+  "title_es": "Dónde siguen comiendo las truchas en invierno",
+  "description_es": "En Colorado, los ríos debajo de las presas no se congelan en invierno. Pesca al mediodía, usa moscas diminutas y busca pozas lentas y profundas.\n\n#shorts #pescaconmosca #colorado",
+  "tags_es": [
+    "pesca con mosca",
+    "pesca en invierno",
+    "truchas colorado",
+    "pesca de truchas",
+    "ninfas",
+    "moscas midge",
+    "pesca en río",
+    "consejos de pesca"
+  ],
+  "segments": [
+    {
+      "narration": "Colorado's best winter trout water is right below a dam.",
+      "narration_es": "En invierno, el mejor lugar para pescar truchas en Colorado está justo debajo de una presa.",
+      "visual_queries": [
+        "river below dam",
+        "dam spillway river",
+        "winter river snow"
+      ]
+    },
+    {
+      "narration": "Tailwaters like the South Platte and the Frying Pan release water from deep in the reservoir, so they stay open when other rivers freeze.",
+      "narration_es": "Ríos como el South Platte o el Frying Pan sueltan agua desde el fondo de la presa, así que siguen corriendo cuando los demás ya se congelaron.",
+      "visual_queries": [
+        "snowy river flowing",
+        "frozen river edges",
+        "winter mountain river"
+      ]
+    },
+    {
+      "narration": "Skip dawn. Fish eleven to three, when midges hatch.",
+      "narration_es": "Olvídate de madrugar. Pesca de once a tres, que es cuando salen los mosquitos.",
+      "visual_queries": [
+        "midge insects water",
+        "sun winter river",
+        "winter sunlight snow"
+      ]
+    },
+    {
+      "narration": "Sluggish trout sit in slow, deep runs, moving about walking speed.",
+      "narration_es": "La trucha anda lenta y se queda en pozas hondas, donde el agua corre como a paso de caminar.",
+      "visual_queries": [
+        "trout underwater river",
+        "deep river pool",
+        "calm river water"
+      ]
+    },
+    {
+      "narration": "Go tiny: midge nymphs, size twenty to twenty-four, drifted right on the bottom.",
+      "narration_es": "Usa moscas chiquititas: ninfas de midge, tamaño veinte a veinticuatro, bien pegadas al fondo.",
+      "visual_queries": [
+        "tiny fishing fly",
+        "fly fishing flies",
+        "fly fishing tackle"
+      ]
+    },
+    {
+      "narration": "Ice in your guides? Dip the rod in the river to melt it.",
+      "narration_es": "¿Se te congelan las guías de la caña? Méte la caña al río un segundo y listo.",
+      "visual_queries": [
+        "fishing rod ice",
+        "fly rod winter",
+        "fly fishing snow"
+      ]
+    },
+    {
+      "narration": "Land one? Keep it wet. Freezing air can damage its gills fast.",
+      "narration_es": "Si sacas una, déjala en el agua. El aire helado le daña las branquias muy rápido.",
+      "visual_queries": [
+        "releasing trout water",
+        "trout in net",
+        "holding trout river"
+      ]
+    },
+    {
+      "narration": "Empty rivers, hungry fish. Winter might be your best season.",
+      "narration_es": "Ríos vacíos y truchas con hambre. A lo mejor el invierno es tu mejor temporada.",
+      "visual_queries": [
+        "fly fishing winter",
+        "angler snowy river",
+        "fly fishing river"
+      ]
+    }
+  ]
+}

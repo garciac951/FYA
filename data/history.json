@@ -58,6 +58,23 @@
           "url": "https://youtube.com/shorts/uyz00yLmrdQ"
         }
       }
+    },
+    {
+      "date": "2026-11-09T06:07:02+00:00",
+      "topic": "fly-fishing",
+      "title": "Where Colorado Trout Still Eat in Winter",
+      "idea": "Fly fishing rivers in colorado in winter weather. How to and best ideas",
+      "run": "7",
+      "redo_of": "6",
+      "upload_mode": "private",
+      "versions": {
+        "en": {
+          "title": "Where Colorado Trout Still Eat in Winter",
+          "file": "output/20261109-0606-where-colorado-trout-still-eat-in-winter/short-en.mp4",
+          "youtube_id": "Bzl9NKZnKXc",
+          "url": "https://youtube.com/shorts/Bzl9NKZnKXc"
+        }
+      }
     }
   ]
 }
