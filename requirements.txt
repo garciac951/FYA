@@ -1,6 +1,7 @@
 anthropic>=2.6.0
 pydantic>=2.7
 requests>=2.31
+pillow>=10.0
 edge-tts>=7.0
 google-api-python-client>=2.130
 google-auth>=2.29

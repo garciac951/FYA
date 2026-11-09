@@ -13,7 +13,7 @@ from .topics import CUSTOM_GUARDRAILS, Topic
 class Segment(BaseModel):
     narration: str
     narration_es: str
-    visual_query: str
+    visual_queries: list[str]
 
 
 class ShortScript(BaseModel):
@@ -59,9 +59,12 @@ Real value, not filler. If you are not confident a fact is true, pick a differen
 Spell numbers the way they should be spoken when it matters ("three hundred degrees").
 - English narration: 85-125 words total. End with a one-line payoff or a natural loop back to the hook, \
 not "like and subscribe".
-- Split the narration into 5-8 segments of one or two sentences. For each, give visual_query: a 2-4 word \
-English stock-footage search that a free library like Pixabay or Pexels will actually have (e.g. "trout river close", \
-"mechanic engine bay", "smartphone settings screen"). Concrete nouns, no people's names, no brands, no text.
+- Split the narration into 5-8 segments of one or two sentences. For each, give visual_queries: 2-3 English \
+stock-footage searches for the free libraries Pixabay and Pexels, ordered from most specific to broadest, each \
+2-4 words. The first should show exactly what the sentence is about; the last should be a safe, common shot that \
+is still clearly on topic. Example: ["trout rising fly", "trout river", "fly fishing river"]. Think about what a \
+camera can actually film: for abstract ideas, search for the concrete thing involved (a thermometer, a calendar, \
+hands doing the task). Concrete nouns only; no people's names, brands, logos or on-screen text.
 - title: under 60 characters, curiosity-driven but honest (no clickbait the video doesn't pay off). No hashtags.
 - description: 1-2 sentences expanding on the tip, then a blank line, then 3 relevant hashtags including #shorts.
 - tags: 5-10 lowercase search phrases.
@@ -160,21 +163,21 @@ def demo_script() -> ShortScript:
         segments=[
             S(narration="If your Bermuda lawn looks thin and stemmy, your mower is probably set too high.",
               narration_es="Si tu pasto Bermuda se ve ralo y con puro tallo, seguro tienes la podadora muy alta.",
-              visual_query="lawn mower grass"),
+              visual_queries=["lawn mower cutting grass", "lawn mower", "green lawn"]),
             S(narration="Bermuda spreads sideways. It wants to be cut short, around one to two inches.",
               narration_es="El Bermuda crece hacia los lados. Le gusta corto, entre una y dos pulgadas.",
-              visual_query="green lawn close"),
+              visual_queries=["bermuda grass lawn", "green lawn close", "lawn"]),
             S(narration="Let it grow tall and it shades its own runners, so you get brown stems instead of thick turf.",
               narration_es="Si lo dejas crecer, se hace sombra a sí mismo y en vez de pasto tupido te quedan tallos cafés.",
-              visual_query="grass blades macro"),
+              visual_queries=["grass blades macro", "grass close up", "lawn"]),
             S(narration="The catch: never take off more than a third of the blade at once, or you'll scalp it.",
               narration_es="Eso sí: nunca le quites más de un tercio de la hoja de una vez, o lo vas a pelar.",
-              visual_query="cutting grass slow motion"),
+              visual_queries=["mowing grass slow motion", "cutting grass", "lawn mower"]),
             S(narration="In a Texas summer that can mean mowing every four or five days.",
               narration_es="En un verano de Texas, eso puede ser cortarlo cada cuatro o cinco días.",
-              visual_query="summer sun heat"),
+              visual_queries=["texas summer sun", "summer sun heat", "hot sun sky"]),
             S(narration="Do that for a month and watch it thicken up like a golf course.",
               narration_es="Hazlo un mes y vas a ver cómo se pone tupido como campo de golf.",
-              visual_query="golf course green"),
+              visual_queries=["golf course green", "thick green lawn", "lawn"]),
         ],
     )

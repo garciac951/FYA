@@ -3,6 +3,7 @@ from __future__ import annotations
 
 import json
 import logging
+import os
 import re
 import shutil
 from datetime import datetime, timezone
@@ -14,7 +15,8 @@ from .topics import (custom_topic, load_history, load_topics, pick_topic, recent
                      recent_titles_any, resolve_request, save_history)
 from .tts import synthesize
 from .upload import next_publish_time, upload_video
-from .visuals import get_clip
+from .clipmatch import pick_footage
+from .visuals import FootageSearch
 
 log = logging.getLogger(__name__)
 
@@ -88,13 +90,12 @@ def run(settings: Settings, *, topic_request: str | None = None, demo: bool = Fa
     work.mkdir(parents=True, exist_ok=True)
     (out_dir / "script.json").write_text(script.model_dump_json(indent=2))
 
-    # Footage is shared by every language version.
-    if not (settings.pixabay_api_key or settings.pexels_api_key):
-        log.warning("No PIXABAY_API_KEY or PEXELS_API_KEY set: using gradient backgrounds")
-    used: set = set()
-    clips = [get_clip(seg.visual_query, work / f"clip{i:02d}.mp4", used,
-                      pixabay_key=settings.pixabay_api_key, pexels_key=settings.pexels_api_key)
-             for i, seg in enumerate(script.segments)]
+    # Footage is shared by every language version. Claude looks at candidate thumbnails and picks the
+    # clip that matches each sentence (falls back to tag ranking without an API key or in demo mode).
+    clips = pick_footage(
+        [seg.narration for seg in script.segments], [seg.visual_queries for seg in script.segments], work,
+        search=FootageSearch(settings.pixabay_api_key, settings.pexels_api_key),
+        model=settings.anthropic_model, use_ai=not demo and bool(os.environ.get("ANTHROPIC_API_KEY")))
 
     record = {
         "date": datetime.now(timezone.utc).isoformat(timespec="seconds"),
