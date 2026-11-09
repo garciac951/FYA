@@ -79,7 +79,7 @@ Repo → **Settings → Secrets and variables → Actions**.
 | `UPLOAD_MODE` | `none` | `none` = render only (download it from the Action run) · `private` = upload privately for you to review · `scheduled` = auto-publish at `PUBLISH_HOUR_UTC` · `public` = publish now |
 | `PUBLISH_HOUR_UTC` | `23` | 23:00 UTC is about 5-6pm in Texas |
 | `TTS_PROVIDER` | `edge` | `edge` (free), `elevenlabs`, `openai` |
-| `TTS_VOICE` | provider default | For example `en-US-GuyNeural` for edge, or an ElevenLabs voice id |
+| `TTS_VOICE` | `en-US-AndrewNeural` (edge) | For example `en-US-GuyNeural` for edge, or an ElevenLabs voice id. Avoid edge voices with "Multilingual" in the name: they can read English phrases with a foreign accent |
 | `YT_SYNTHETIC_MEDIA` | `false` | Set `true` if videos ever use realistic AI-generated footage. Stock clips with a TTS voice don't need the label |
 
 ## 5. Turn it on

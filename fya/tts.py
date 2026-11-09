@@ -31,7 +31,9 @@ class Speech:
 
 
 DEFAULT_VOICES = {
-    ("edge", "en"): "en-US-AndrewMultilingualNeural",
+    # English-only voice on purpose: the "Multilingual" voices guess the language of each phrase and can
+    # read short English fragments with a foreign accent.
+    ("edge", "en"): "en-US-AndrewNeural",
     ("edge", "es"): "es-MX-JorgeNeural",
     # ElevenLabs and OpenAI voices are multilingual: same voice speaks both languages.
     ("elevenlabs", "en"): "pNInz6obpgDQGcFmaJgB",  # "Adam", a stock ElevenLabs voice
@@ -41,6 +43,36 @@ DEFAULT_VOICES = {
     ("espeak", "en"): "en-us",
     ("espeak", "es"): "es-419",
 }
+
+
+# Edge voices to try, in order, if the preferred one isn't offered by the service.
+EDGE_FALLBACKS = {
+    "en": ["en-US-AndrewNeural", "en-US-GuyNeural", "en-US-ChristopherNeural", "en-US-EricNeural"],
+    "es": ["es-MX-JorgeNeural", "es-US-AlonsoNeural", "es-MX-DaliaNeural"],
+}
+_edge_voice_cache: dict[tuple[str, str], str] = {}
+
+
+def resolve_edge_voice(lang: str, requested: str) -> str:
+    """Use the requested voice if the service offers it, else the first available fallback for the language."""
+    key = (lang, requested)
+    if key in _edge_voice_cache:
+        return _edge_voice_cache[key]
+    import edge_tts
+
+    candidates = [v for v in [requested, *EDGE_FALLBACKS.get(lang, [])] if v]
+    try:
+        available = {v["ShortName"] for v in asyncio.run(edge_tts.list_voices())}
+    except Exception as e:  # can't list voices: just try the requested one
+        log.warning("Couldn't list Edge voices (%s); using %s", e, candidates[0])
+        available = set(candidates[:1])
+    chosen = next((v for v in candidates if v in available), candidates[0])
+    if requested and chosen != requested:
+        log.warning("Edge voice %s isn't available; using %s", requested, chosen)
+    if "Multilingual" in chosen:
+        log.warning("%s is a multilingual voice; it may misread short phrases as another language", chosen)
+    _edge_voice_cache[key] = chosen
+    return chosen
 
 
 def estimate_words(text: str, duration: float) -> list[Word]:
@@ -138,7 +170,7 @@ def synthesize(text: str, out_base: Path, *, provider: str, lang: str = "en", vo
     words: list[Word] | None = None
     if provider == "edge":
         out = out_base.with_suffix(".mp3")
-        words = _edge(text, voice, out)
+        words = _edge(text, resolve_edge_voice(lang, voice), out)
     elif provider == "elevenlabs":
         if not elevenlabs_key:
             raise SystemExit("TTS_PROVIDER=elevenlabs needs ELEVENLABS_API_KEY")

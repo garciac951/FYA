@@ -56,6 +56,8 @@ mistake the viewer is probably making, or a specific question. Never open with "
 - One idea per Short, delivered with a concrete, specific, accurate detail the viewer did not know. \
 Real value, not filler. If you are not confident a fact is true, pick a different fact.
 - Written for the ear: short sentences, plain words, no lists read aloud, no emojis, no stage directions. \
+Use complete sentences, not clipped fragments like "Freeze? Skip dawn."; a text-to-speech voice reads those \
+unnaturally. \
 Spell numbers the way they should be spoken when it matters ("three hundred degrees").
 - English narration: 85-125 words total. End with a one-line payoff or a natural loop back to the hook, \
 not "like and subscribe".
