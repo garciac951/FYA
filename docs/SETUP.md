@@ -34,24 +34,27 @@ The default voice (`TTS_PROVIDER=edge`) is free and needs no key.
 
 1. Go to console.cloud.google.com and create a project, for example "fya-uploader".
 2. **APIs & Services → Library**: enable **YouTube Data API v3**.
-3. **APIs & Services → OAuth consent screen**: choose External. Fill in the app name and your email.
-   Add the scope `.../auth/youtube.upload`. Add yourself as a test user.
-4. **Publish the app to "In production"** on the same screen. You don't need Google's verification for
-   personal use: you'll just click through an "unverified app" warning once. If you skip this, Google
-   **expires the refresh token after 7 days** and uploads stop.
-5. **Credentials → Create credentials → OAuth client ID → Desktop app**. Download the JSON file.
-6. On your computer:
+3. **Google Auth Platform** (this used to be called "OAuth consent screen"). Click **Get started**, enter an
+   app name and your email, choose **External**, then finish.
+   - **Data Access → Add or remove scopes**: add `.../auth/youtube.upload`, then save.
+   - **Audience → Publish app**, so the status says **In production**. If you leave it in Testing, Google
+     **expires the token after 7 days** and uploads stop. You don't need Google's app verification for your
+     own use: you'll click through an "unverified app" warning once.
+4. **Clients → Create client → Desktop app**. Download the JSON file.
+5. Do this *after* publishing the app, because tokens created while it's in Testing still expire. On your computer:
    ```bash
    pip install google-auth-oauthlib
    python scripts/youtube_auth.py ~/Downloads/client_secret_XXXX.json
    ```
    Sign in, **pick the English channel** (not your personal one) and allow access. The script prints three values.
-7. **Run it a second time and pick the Spanish channel.** Keep only the new `YT_REFRESH_TOKEN` it prints
+6. **Run it a second time and pick the Spanish channel.** Keep only the new `YT_REFRESH_TOKEN` it prints
    and save it as `YT_REFRESH_TOKEN_ES`. The client ID and secret are the same for both channels.
 
-**Important limit:** until Google audits your API project, **every upload is locked to private**. That's fine
-for the review phase. When you're ready to post automatically, request the audit with the
-"YouTube API Services - Audit and Quota Extension" form, linked from the YouTube API docs. It's free.
+**Important limit:** until Google audits your API project, **every API upload is locked to private, and
+you can't switch it to public afterwards**, not even in YouTube Studio. So until the audit is approved,
+keep `UPLOAD_MODE=none` and post the daily videos yourself (see "Before the audit" below). To post
+automatically, request the audit with the "YouTube API Services - Audit and Quota Extension" form, linked
+from the YouTube API docs. It's free, takes days to weeks, and approval isn't guaranteed.
 Quota: each upload uses about 1,600 of the default 10,000 units a day. One Short a day in two languages
 uses about 3,200, so there's room for up to 3 Shorts a day in both languages.
 
@@ -80,12 +83,14 @@ Repo → **Settings → Secrets and variables → Actions**.
 
 ## 5. Turn it on
 
-1. Merge this branch into the default branch. Scheduled workflows only run from the default branch.
-2. **Actions → Daily Short → Run workflow** to try it once. With `UPLOAD_MODE=none`, download the video from the run's **Artifacts**.
+1. Make sure `main` is the default branch. Scheduled workflows only run from the default branch.
+2. **Actions → Daily Short → Run workflow** to try it once. With `UPLOAD_MODE=none`, download the videos from the run's **Artifacts**.
 3. Recommended rollout:
-   - Week 1: `none` or `private`. Watch every video and tell Claude what to change.
-   - Weeks 2-3: `private`. Publish the good ones yourself in YouTube Studio.
-   - After the API audit is approved: `scheduled`.
+   - **Before the audit:** `UPLOAD_MODE=none`. Every day, download the run's artifact. It has
+     `short-en.mp4` and `short-es.mp4`, plus `short-en.txt` and `short-es.txt` with the title, description
+     and tags ready to paste. Upload each one in YouTube Studio or the YouTube app; that takes about 2 minutes per video.
+     Skip any video you don't like, and tell Claude what to change.
+   - **After the audit is approved:** test once with `private`, then set `UPLOAD_MODE=scheduled`.
 
 ## Optional: background music
 

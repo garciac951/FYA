@@ -78,6 +78,10 @@ def run(settings: Settings, *, topic_id: str | None = None, demo: bool = False,
             video = render_short(segments, out_dir / f"short-{lang}.mp4", lang_work,
                                  brand=settings.channel(lang), music_dir=settings.music_dir)
             log.info("[%s] Rendered %s", lang, video)
+            # Copy-paste sheet for posting by hand.
+            video.with_suffix(".txt").write_text(
+                f"TITLE\n{loc.title}\n\nDESCRIPTION\n{loc.description}\n\nTAGS\n{', '.join(loc.tags)}\n",
+                encoding="utf-8")
             version = {"title": loc.title, "file": str(video.relative_to(settings.output_dir.parent))}
 
             if upload_mode != "none":
