@@ -31,7 +31,7 @@ def load_history(path: Path) -> list[dict]:
 
 def save_history(path: Path, videos: list[dict]) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_text(json.dumps({"videos": videos}, indent=2) + "\n")
+    path.write_text(json.dumps({"videos": videos}, indent=2, ensure_ascii=False) + "\n")
 
 
 def pick_topic(topics: list[Topic], history: list[dict], topic_id: str | None = None) -> Topic:

@@ -37,12 +37,17 @@ jobs:
       YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
       YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
       YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+      YT_REFRESH_TOKEN_ES: ${{ secrets.YT_REFRESH_TOKEN_ES }}
+      FYA_LANGUAGES: ${{ vars.FYA_LANGUAGES }}
       FYA_CHANNEL_NAME: ${{ vars.FYA_CHANNEL_NAME }}
+      FYA_CHANNEL_NAME_ES: ${{ vars.FYA_CHANNEL_NAME_ES }}
       FYA_MODEL: ${{ vars.FYA_MODEL }}
       TTS_PROVIDER: ${{ vars.TTS_PROVIDER }}
       TTS_VOICE: ${{ vars.TTS_VOICE }}
+      TTS_VOICE_ES: ${{ vars.TTS_VOICE_ES }}
       UPLOAD_MODE: ${{ inputs.upload || vars.UPLOAD_MODE || 'none' }}
       PUBLISH_HOUR_UTC: ${{ vars.PUBLISH_HOUR_UTC }}
+      PUBLISH_HOUR_UTC_ES: ${{ vars.PUBLISH_HOUR_UTC_ES }}
       YT_SYNTHETIC_MEDIA: ${{ vars.YT_SYNTHETIC_MEDIA }}
     steps:
       - uses: actions/checkout@v4

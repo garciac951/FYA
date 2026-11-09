@@ -32,10 +32,15 @@ class Settings:
     # Script writing
     anthropic_model: str = field(default_factory=lambda: _env("FYA_MODEL", "claude-opus-5-5"))
     channel_name: str = field(default_factory=lambda: _env("FYA_CHANNEL_NAME", "Porch Talk"))
+    channel_name_es: str = field(default_factory=lambda: _env("FYA_CHANNEL_NAME_ES", "Plática de Porche"))
+    # Which versions to make for every Short: "en,es" (default), "en" or "es"
+    languages: list[str] = field(default_factory=lambda: [
+        x.strip() for x in _env("FYA_LANGUAGES", "en,es").split(",") if x.strip()])
 
     # Voice: edge (free), elevenlabs, openai, espeak (offline, robotic: testing only)
     tts_provider: str = field(default_factory=lambda: _env("TTS_PROVIDER", "edge"))
     tts_voice: str = field(default_factory=lambda: _env("TTS_VOICE", ""))
+    tts_voice_es: str = field(default_factory=lambda: _env("TTS_VOICE_ES", ""))
     elevenlabs_api_key: str = field(default_factory=lambda: _env("ELEVENLABS_API_KEY"))
     openai_api_key: str = field(default_factory=lambda: _env("OPENAI_API_KEY"))
 
@@ -45,10 +50,27 @@ class Settings:
     # Upload: none | private | scheduled | public
     upload_mode: str = field(default_factory=lambda: _env("UPLOAD_MODE", "none"))
     publish_hour_utc: int = field(default_factory=lambda: int(_env("PUBLISH_HOUR_UTC", "23")))
+    publish_hour_utc_es: int = field(default_factory=lambda: int(_env("PUBLISH_HOUR_UTC_ES", "1")))
     synthetic_media: bool = field(default_factory=lambda: _env("YT_SYNTHETIC_MEDIA", "false").lower() == "true")
     yt_client_id: str = field(default_factory=lambda: _env("YT_CLIENT_ID"))
     yt_client_secret: str = field(default_factory=lambda: _env("YT_CLIENT_SECRET"))
     yt_refresh_token: str = field(default_factory=lambda: _env("YT_REFRESH_TOKEN"))
+    # Token for the Spanish channel. Leave unset to post the Spanish version to the same channel.
+    yt_refresh_token_es: str = field(default_factory=lambda: _env("YT_REFRESH_TOKEN_ES"))
+
+    def channel(self, lang: str) -> str:
+        return self.channel_name_es if lang == "es" else self.channel_name
+
+    def voice(self, lang: str) -> str:
+        return self.tts_voice_es if lang == "es" else self.tts_voice
+
+    def publish_hour(self, lang: str) -> int:
+        return self.publish_hour_utc_es if lang == "es" else self.publish_hour_utc
+
+    def refresh_token(self, lang: str) -> str:
+        if lang == "es" and self.yt_refresh_token_es:
+            return self.yt_refresh_token_es
+        return self.yt_refresh_token
 
     # Paths
     topics_file: Path = ROOT / "config" / "topics.json"

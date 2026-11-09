@@ -1,16 +1,19 @@
 # FYA: faceless YouTube Shorts pipeline
 
-Makes one vertical Short per day and (optionally) uploads it to YouTube.
+Makes one vertical Short per day, in **English and Spanish**, and (optionally) uploads each version to YouTube.
 
 ```
-topic rotation ─▶ Claude writes script ─▶ voiceover (edge / ElevenLabs / OpenAI)
-      ─▶ Pexels stock footage ─▶ ffmpeg: 1080x1920, word-by-word captions, music
+topic rotation ─▶ Claude writes the script in English + a natural Spanish adaptation
+      ─▶ Pexels stock footage (shared by both versions)
+      ─▶ for each language: voiceover ─▶ ffmpeg 1080x1920 + word-by-word captions
       ─▶ YouTube upload (none / private / scheduled / public) ─▶ data/history.json
 ```
 
-- **Topics:** `config/topics.json`. Ten topics to start (fly fishing, mechanics, Texas Bermuda lawns,
-  Java, raising a boy, cooking, basketball, football, beer 21+, dogs). Topics are rotated so each one
-  gets tested. Raise a topic's `weight` when it does well, or set it to `0` to pause it.
+- **Languages:** `FYA_LANGUAGES=en,es` by default. The Spanish version goes to a second channel when
+  `YT_REFRESH_TOKEN_ES` is set, otherwise to the same channel.
+- **Topics:** `config/topics.json`. Twelve topics to start (fly fishing, mechanics, Texas Bermuda lawns,
+  Java, raising a boy, cooking, basketball, football, beer 21+, dogs, phone tips, computer and OS tips).
+  Topics are rotated so each one gets tested. Raise a topic's `weight` when it does well, or set it to `0` to pause it.
 - **Schedule:** `.github/workflows/daily-short.yml` runs once a day. It can also be started by hand from the Actions tab.
 - **History:** every video is logged in `data/history.json` so topics and ideas don't repeat.
 
@@ -30,5 +33,7 @@ python -m fya --list-topics
 - It avoids repeating earlier titles on the same topic.
 - Beer content is written for adults 21+, educational only, with no binge drinking, drinking and driving, or brand endorsements.
 - Dog health content is general and points owners to a vet.
+- Tech tips name the platform (iPhone, Android, Windows, Mac) and avoid menu paths the writer isn't sure of.
+- Spanish is adapted, not translated word for word: conversational Mexican and US Hispanic Spanish, addressing the viewer as "tú".
 
 These rules exist because YouTube demonetizes "inauthentic" mass-produced content. Each video has to offer something real.

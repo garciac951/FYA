@@ -29,7 +29,7 @@ def main() -> None:
         return
 
     record = run(settings, topic_id=args.topic, demo=args.demo, upload_mode=args.upload, keep_work=args.keep_work)
-    print(json.dumps(record, indent=2))
+    print(json.dumps(record, indent=2, ensure_ascii=False))
 
 
 if __name__ == "__main__":

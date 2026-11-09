@@ -27,10 +27,15 @@ class Speech:
 
 
 DEFAULT_VOICES = {
-    "edge": "en-US-AndrewMultilingualNeural",
-    "elevenlabs": "pNInz6obpgDQGcFmaJgB",  # "Adam", a stock ElevenLabs voice
-    "openai": "onyx",
-    "espeak": "en-us",
+    ("edge", "en"): "en-US-AndrewMultilingualNeural",
+    ("edge", "es"): "es-MX-JorgeNeural",
+    # ElevenLabs and OpenAI voices are multilingual: same voice speaks both languages.
+    ("elevenlabs", "en"): "pNInz6obpgDQGcFmaJgB",  # "Adam", a stock ElevenLabs voice
+    ("elevenlabs", "es"): "pNInz6obpgDQGcFmaJgB",
+    ("openai", "en"): "onyx",
+    ("openai", "es"): "onyx",
+    ("espeak", "en"): "en-us",
+    ("espeak", "es"): "es-419",
 }
 
 
@@ -109,9 +114,9 @@ def _espeak(text: str, voice: str, out: Path) -> None:
     subprocess.run(["espeak-ng", "-v", voice, "-s", "165", "-w", str(out), text], check=True)
 
 
-def synthesize(text: str, out_base: Path, *, provider: str, voice: str = "",
+def synthesize(text: str, out_base: Path, *, provider: str, lang: str = "en", voice: str = "",
                elevenlabs_key: str = "", openai_key: str = "") -> Speech:
-    voice = voice or DEFAULT_VOICES.get(provider, "")
+    voice = voice or DEFAULT_VOICES.get((provider, lang), "")
     words: list[Word] | None = None
     if provider == "edge":
         out = out_base.with_suffix(".mp3")

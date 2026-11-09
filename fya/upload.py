@@ -10,20 +10,21 @@ log = logging.getLogger(__name__)
 SCOPES = ["https://www.googleapis.com/auth/youtube.upload"]
 
 
-def next_publish_time(hour_utc: int, history: list[dict]) -> datetime:
-    """Next free slot at hour_utc, after any video already scheduled."""
+def next_publish_time(hour_utc: int, history: list[dict], lang: str = "en") -> datetime:
+    """Next free slot at hour_utc, after any video already scheduled in this language."""
     now = datetime.now(timezone.utc)
     slot = now.replace(hour=hour_utc, minute=0, second=0, microsecond=0)
     if slot <= now + timedelta(minutes=30):
         slot += timedelta(days=1)
-    scheduled = {v.get("publish_at") for v in history if v.get("publish_at")}
+    scheduled = {v.get("versions", {}).get(lang, {}).get("publish_at") for v in history}
+    scheduled.discard(None)
     while slot.isoformat() in scheduled:
         slot += timedelta(days=1)
     return slot
 
 
 def upload_video(path: Path, *, title: str, description: str, tags: list[str], category_id: str,
-                 privacy: str, publish_at: datetime | None, synthetic_media: bool,
+                 lang: str, privacy: str, publish_at: datetime | None, synthetic_media: bool,
                  client_id: str, client_secret: str, refresh_token: str) -> str:
     from google.oauth2.credentials import Credentials
     from googleapiclient.discovery import build
@@ -51,8 +52,8 @@ def upload_video(path: Path, *, title: str, description: str, tags: list[str], c
             "description": description[:4900],
             "tags": tags[:15],
             "categoryId": category_id,
-            "defaultLanguage": "en",
-            "defaultAudioLanguage": "en",
+            "defaultLanguage": lang,
+            "defaultAudioLanguage": lang,
         },
         "status": status,
     }
