@@ -1,1 +1,21 @@
-{"videos": []}
+{
+  "videos": [
+    {
+      "date": "2026-11-09T04:12:18+00:00",
+      "topic": "bermuda-grass-texas",
+      "title": "How Often to Mow Bermuda (It's Not Weekly)",
+      "idea": "how often to mow Bermuda lawn",
+      "upload_mode": "none",
+      "versions": {
+        "en": {
+          "title": "How Often to Mow Bermuda (It's Not Weekly)",
+          "file": "output/20261109-0412-how-often-to-mow-bermuda-it-s-not-weekly/short-en.mp4"
+        },
+        "es": {
+          "title": "¿Cada cuánto cortar el pasto Bermuda?",
+          "file": "output/20261109-0412-how-often-to-mow-bermuda-it-s-not-weekly/short-es.mp4"
+        }
+      }
+    }
+  ]
+}
