@@ -4,16 +4,19 @@ The topic list (fly fishing, trucks, Bermuda lawns, grilling, football, beer, do
 phone and computer tips) is "practical know-how from a regular guy." Every Short is published in English
 and Spanish, ideally on two channels, so the brand should work as a pair.
 
-## Recommended: Porch Talk / Plática de Porche
+## Chosen
 
 | | English | Spanish |
 |---|---|---|
-| Name | **Porch Talk** | **Plática de Porche** |
-| Handle idea | @PorchTalkShorts | @PlaticaDePorche |
+| Name | **Porch Talk Pro** | **Plática de Porche** |
+| Handle | @PorchTalkPro | @PlaticaDePorche |
 
-The porch is where you talk about anything: the truck, the lawn, the game, the new phone. That's why it
-still fits now that tech is in the mix. "Plática" is the everyday Mexican and Texan word for a chat, so the
-Spanish name sounds natural to the audience you'll most likely reach first.
+The porch is where you talk about anything: the truck, the lawn, the game, the new phone. "Pro" sets it
+apart from an existing "Porch Talk" channel and signals that the tips are worth knowing. "Plática" is the
+everyday Mexican and Texan word for a chat. Write the Spanish name with the accent and a lowercase "de";
+the handle stays without the accent so it's easy to type.
+
+The rest of this page is the shortlist we considered, kept for reference.
 
 ## If you want one name that works in both languages
 

@@ -70,7 +70,7 @@ Repo → **Settings → Secrets and variables → Actions**.
 
 | Variable | Default | Meaning |
 |---|---|---|
-| `FYA_CHANNEL_NAME` | `Porch Talk` | English channel name, shown on the video and given to the scriptwriter |
+| `FYA_CHANNEL_NAME` | `Porch Talk Pro` | English channel name, shown on the video and given to the scriptwriter |
 | `FYA_CHANNEL_NAME_ES` | `Plática de Porche` | Spanish channel name |
 | `FYA_LANGUAGES` | `en,es` | Which versions to make: `en,es`, `en` or `es` |
 | `TTS_VOICE_ES` | `es-MX-JorgeNeural` (edge) | Spanish voice. ElevenLabs and OpenAI use the same voice for both languages |

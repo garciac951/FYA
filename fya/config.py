@@ -31,7 +31,7 @@ def _env(name: str, default: str = "") -> str:
 class Settings:
     # Script writing
     anthropic_model: str = field(default_factory=lambda: _env("FYA_MODEL", "claude-opus-5-5"))
-    channel_name: str = field(default_factory=lambda: _env("FYA_CHANNEL_NAME", "Porch Talk"))
+    channel_name: str = field(default_factory=lambda: _env("FYA_CHANNEL_NAME", "Porch Talk Pro"))
     channel_name_es: str = field(default_factory=lambda: _env("FYA_CHANNEL_NAME_ES", "Plática de Porche"))
     # Which versions to make for every Short: "en,es" (default), "en" or "es"
     languages: list[str] = field(default_factory=lambda: [
