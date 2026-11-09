@@ -1,8 +1,10 @@
 """Write the Short's script with Claude (structured output), in English and Spanish."""
 from __future__ import annotations
 
+import json
 import random
 from dataclasses import dataclass
+from pathlib import Path
 
 import anthropic
 from pydantic import BaseModel
@@ -183,3 +185,13 @@ def demo_script() -> ShortScript:
               visual_queries=["golf course green", "thick green lawn", "lawn"]),
         ],
     )
+
+
+def load_script(path: Path) -> ShortScript:
+    """Load a saved script.json, upgrading older formats (single visual_query, no topic_id)."""
+    data = json.loads(path.read_text(encoding="utf-8"))
+    data.setdefault("topic_id", "custom")
+    for seg in data.get("segments", []):
+        if "visual_queries" not in seg:
+            seg["visual_queries"] = [seg.pop("visual_query")] if seg.get("visual_query") else []
+    return ShortScript.model_validate(data)

@@ -93,6 +93,22 @@ Repo → **Settings → Secrets and variables → Actions**.
      Skip any video you don't like, and tell Claude what to change.
    - **After the audit is approved:** test once with `private`, then set `UPLOAD_MODE=scheduled`.
 
+## Redo one language after spotting a mistake
+
+Every run's number is shown in the Actions list (for example **Daily Short #7**). To redo only the
+English or only the Spanish version of that Short:
+
+1. **Actions → Daily Short → Run workflow**.
+2. **Which versions to make:** `english` or `spanish`.
+3. **Redo from run #:** the run number, for example `7`. Leave the topic blank; it's ignored when redoing.
+4. Run it. The same script is voiced, matched with footage and rendered again, so it still matches the other
+   language. Download the new video from this run's Artifacts.
+
+If the mistake is in the wording itself, fix the text first: on GitHub, open `data/scripts/run-7.json`,
+click the pencil icon, edit the `narration` (English) or `narration_es` (Spanish) line, and **Commit changes**.
+Then run the redo. Runs made before this option existed are fetched from their artifact (kept for 14 days),
+so their wording can't be edited this way.
+
 ## Optional: background music
 
 Put royalty-free tracks (`.mp3`) in `assets/music/`. The YouTube Audio Library is a safe source.

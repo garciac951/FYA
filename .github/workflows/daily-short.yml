@@ -11,6 +11,16 @@ on:
         description: "Topic (e.g. dogs, phone-tips) or your own idea (e.g. how often to mow Bermuda). Blank = automatic"
         required: false
         default: ""
+      languages:
+        description: "Which versions to make"
+        required: false
+        default: "both"
+        type: choice
+        options: ["both", "english", "spanish"]
+      reuse_run:
+        description: "Redo from run # (reuse that run's script, e.g. 7). Blank = write a new script"
+        required: false
+        default: ""
       upload:
         description: "Upload mode for this run"
         required: false
@@ -20,6 +30,7 @@ on:
 
 permissions:
   contents: write
+  actions: read  # to fetch an earlier run's script from its artifact
 
 concurrency:
   group: daily-short
@@ -39,7 +50,7 @@ jobs:
       YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
       YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
       YT_REFRESH_TOKEN_ES: ${{ secrets.YT_REFRESH_TOKEN_ES }}
-      FYA_LANGUAGES: ${{ vars.FYA_LANGUAGES }}
+      FYA_LANGUAGES: ${{ (inputs.languages == 'english' && 'en') || (inputs.languages == 'spanish' && 'es') || (inputs.languages == 'both' && 'en,es') || vars.FYA_LANGUAGES || 'en,es' }}
       FYA_CHANNEL_NAME: ${{ vars.FYA_CHANNEL_NAME }}
       FYA_CHANNEL_NAME_ES: ${{ vars.FYA_CHANNEL_NAME_ES }}
       FYA_MODEL: ${{ vars.FYA_MODEL }}
@@ -63,15 +74,41 @@ jobs:
 
       - run: pip install -r requirements.txt
 
+      - name: Fetch the earlier script
+        if: inputs.reuse_run != ''
+        env:
+          REUSE_RUN: ${{ inputs.reuse_run }}
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          N="$(echo "$REUSE_RUN" | tr -d ' #')"
+          case "$N" in ''|*[!0-9]*) echo "::error::'Redo from run #' must be a run number like 7"; exit 1;; esac
+          if [ -f "data/scripts/run-$N.json" ]; then
+            echo "Using data/scripts/run-$N.json"; exit 0
+          fi
+          # Older runs: take script.json from that run's artifact (kept 14 days).
+          ID="$(gh run list --workflow daily-short.yml --limit 300 --json number,databaseId \
+                --jq ".[] | select(.number == $N) | .databaseId")"
+          if [ -z "$ID" ]; then echo "::error::Couldn't find run #$N of this workflow"; exit 1; fi
+          gh run download "$ID" --name "short-$N" --dir "$RUNNER_TEMP/prev" || {
+            echo "::error::Run #$N has no downloadable files (older than 14 days?)"; exit 1; }
+          SCRIPT="$(find "$RUNNER_TEMP/prev" -name script.json | head -1)"
+          if [ -z "$SCRIPT" ]; then echo "::error::Run #$N didn't save a script"; exit 1; fi
+          mkdir -p data/scripts && cp "$SCRIPT" "data/scripts/run-$N.json"
+          echo "Fetched the script from run #$N's artifact"
+
       - name: Make the Short
         env:
           TOPIC_REQUEST: ${{ inputs.topic }}
+          REUSE_RUN: ${{ inputs.reuse_run }}
         run: |
-          if [ -n "$TOPIC_REQUEST" ]; then
-            python -m fya --topic "$TOPIC_REQUEST"
-          else
-            python -m fya
+          ARGS=()
+          N="$(echo "$REUSE_RUN" | tr -d ' #')"
+          if [ -n "$N" ]; then
+            ARGS+=(--reuse-run "$N")
+          elif [ -n "$TOPIC_REQUEST" ]; then
+            ARGS+=(--topic "$TOPIC_REQUEST")
           fi
+          python -m fya "${ARGS[@]}"
 
       - name: Keep the video as a downloadable artifact
         if: always()
@@ -86,6 +123,7 @@ jobs:
         run: |
           git config user.name "fya-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/history.json
+          git add data/history.json data/scripts
           git diff --cached --quiet || git commit -m "Log Short from run ${{ github.run_number }}"
+          git pull --rebase -q origin "${{ github.ref_name }}"
           git push

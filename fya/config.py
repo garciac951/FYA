@@ -76,5 +76,6 @@ class Settings:
     # Paths
     topics_file: Path = ROOT / "config" / "topics.json"
     history_file: Path = ROOT / "data" / "history.json"
+    scripts_dir: Path = ROOT / "data" / "scripts"
     output_dir: Path = ROOT / "output"
     music_dir: Path = ROOT / "assets" / "music"

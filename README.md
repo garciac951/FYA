@@ -15,7 +15,9 @@ topic rotation ─▶ Claude writes the script in English + a natural Spanish ad
 - **Topics:** `config/topics.json`. Twelve topics to start (fly fishing, mechanics, Texas Bermuda lawns,
   Java, raising a boy, cooking, basketball, football, beer 21+, dogs, phone tips, computer and OS tips).
   Topics are rotated so each one gets tested. Raise a topic's `weight` when it does well, or set it to `0` to pause it.
-- **Schedule:** `.github/workflows/daily-short.yml` runs once a day. It can also be started by hand from the Actions tab.
+- **Schedule:** `.github/workflows/daily-short.yml` runs once a day. It can also be started by hand from the Actions tab,
+  for both languages or just one, and can redo one language from an earlier run's script (see docs/SETUP.md).
+- **Scripts:** every run's script is saved in `data/scripts/run-N.json` (N = the run number).
 - **History:** every video is logged in `data/history.json` so topics and ideas don't repeat.
 
 Start here: **[docs/SETUP.md](docs/SETUP.md)** · Name ideas: **[docs/CHANNEL_NAMES.md](docs/CHANNEL_NAMES.md)**

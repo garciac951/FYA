@@ -7,10 +7,11 @@ import os
 import re
 import shutil
 from datetime import datetime, timezone
+from pathlib import Path
 
 from .config import Settings
 from .render import RenderSegment, render_short
-from .scriptgen import demo_script, generate_script
+from .scriptgen import demo_script, generate_script, load_script
 from .topics import (custom_topic, load_history, load_topics, pick_topic, recent_titles,
                      recent_titles_any, resolve_request, save_history)
 from .tts import synthesize
@@ -53,11 +54,14 @@ def upload_sheet(loc, topic, channel: str) -> str:
 
 
 def run(settings: Settings, *, topic_request: str | None = None, demo: bool = False,
-        upload_mode: str | None = None, keep_work: bool = False) -> dict:
+        upload_mode: str | None = None, keep_work: bool = False, languages: list[str] | None = None,
+        reuse_script: Path | None = None) -> dict:
+    """Make one Short. `languages` overrides FYA_LANGUAGES; `reuse_script` re-renders a saved script
+    instead of writing a new one (e.g. to redo just the English version after spotting a mistake)."""
     upload_mode = upload_mode or settings.upload_mode
     if upload_mode not in {"none", "private", "scheduled", "public"}:
         raise SystemExit(f"UPLOAD_MODE must be none/private/scheduled/public, got '{upload_mode}'")
-    languages = settings.languages
+    languages = languages or settings.languages
     unknown = set(languages) - SUPPORTED_LANGUAGES
     if not languages or unknown:
         raise SystemExit(f"FYA_LANGUAGES must be a comma list of {sorted(SUPPORTED_LANGUAGES)}, got {languages}")
@@ -65,15 +69,30 @@ def run(settings: Settings, *, topic_request: str | None = None, demo: bool = Fa
     topics = load_topics(settings.topics_file)
     history = load_history(settings.history_file)
     topic, idea = None, None
+    if reuse_script is not None:
+        if topic_request and topic_request.strip():
+            log.warning("Reusing a saved script, so the topic/idea %r is ignored", topic_request)
+        topic_request = None
     if topic_request and topic_request.strip():
         topic, idea = resolve_request(topics, topic_request)
+    elif reuse_script is not None:
+        topic = None  # taken from the saved script below
     elif demo:
         topic = pick_topic(topics, history, "bermuda-grass-texas")
     else:
         topic = pick_topic(topics, history)
     log.info("Topic: %s%s", topic.name if topic else "(writer picks)", f" | idea: {idea}" if idea else "")
 
-    if demo:
+    if reuse_script is not None:
+        script = load_script(reuse_script)
+        log.info("Reusing the script from %s", reuse_script)
+        wanted_run = reuse_script.stem.removeprefix("run-")
+        earlier = next((v for v in reversed(history) if str(v.get("run")) == wanted_run), None) or \
+            next((v for v in reversed(history) if v.get("title") == script.title), {})
+        idea = earlier.get("idea")
+        if script.topic_id not in {t.id for t in topics} and earlier.get("topic"):
+            script.topic_id = earlier["topic"]  # older scripts didn't record their topic
+    elif demo:
         script = demo_script()
     else:
         avoid = recent_titles(history, topic.id) if topic else recent_titles_any(history)
@@ -81,7 +100,7 @@ def run(settings: Settings, *, topic_request: str | None = None, demo: bool = Fa
                                  channel_es=settings.channel_name_es, idea=idea, catalog=topics)
     if topic is None:
         topic = next((t for t in topics if t.id == script.topic_id), None) or custom_topic(idea or "custom")
-        log.info("Writer filed the idea under: %s", topic.id)
+        log.info("Topic from the script: %s", topic.id)
     log.info("Title: %s | %s", script.title, script.title_es)
 
     stamp = datetime.now(timezone.utc).strftime("%Y%m%d-%H%M")
@@ -89,6 +108,11 @@ def run(settings: Settings, *, topic_request: str | None = None, demo: bool = Fa
     work = out_dir / "work"
     work.mkdir(parents=True, exist_ok=True)
     (out_dir / "script.json").write_text(script.model_dump_json(indent=2))
+    # Keep a copy in the repo, named by run number, so a later run can redo one language from it.
+    run_id = os.environ.get("GITHUB_RUN_NUMBER") or stamp
+    if not demo:
+        settings.scripts_dir.mkdir(parents=True, exist_ok=True)
+        (settings.scripts_dir / f"run-{run_id}.json").write_text(script.model_dump_json(indent=2), encoding="utf-8")
 
     # Footage is shared by every language version. Claude looks at candidate thumbnails and picks the
     # clip that matches each sentence (falls back to tag ranking without an API key or in demo mode).
@@ -102,6 +126,8 @@ def run(settings: Settings, *, topic_request: str | None = None, demo: bool = Fa
         "topic": topic.id,
         "title": script.title,
         "idea": idea,
+        "run": run_id,
+        "redo_of": reuse_script.stem.removeprefix("run-") if reuse_script is not None else None,
         "upload_mode": upload_mode,
         "versions": {},
     }
