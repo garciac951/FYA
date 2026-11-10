@@ -1,0 +1,92 @@
+{
+  "topic_id": "cooking",
+  "title": "The Water Trick for Crispier Stovetop Bacon",
+  "description": "Starting bacon in a cold pan with a splash of water melts the fat out before the meat browns, so every strip fries up evenly crisp instead of chewy and burnt.\n\n#shorts #bacon #cookingtips",
+  "tags": [
+    "crispy bacon",
+    "how to cook bacon",
+    "stovetop bacon",
+    "bacon water method",
+    "crunchy bacon",
+    "bacon tips",
+    "cast iron bacon",
+    "breakfast cooking"
+  ],
+  "title_es": "El truco del agua para tocino súper crujiente",
+  "description_es": "Si empiezas el tocino en sartén fría con un poco de agua, la grasa se derrite antes de que la carne se dore y cada tira queda crujiente parejita, sin partes chiclosas ni quemadas.\n\n#shorts #tocino #trucosdecocina",
+  "tags_es": [
+    "tocino crujiente",
+    "cómo cocinar tocino",
+    "tocino en sartén",
+    "truco del agua tocino",
+    "tocino dorado",
+    "desayuno fácil",
+    "trucos de cocina",
+    "sartén de hierro"
+  ],
+  "segments": [
+    {
+      "narration": "Tossing bacon into a hot pan is exactly why it comes out burnt on the edges and chewy in the middle.",
+      "narration_es": "Echar el tocino a la sartén ya caliente es justo lo que lo deja quemado de las orillas y chicloso por dentro.",
+      "visual_queries": [
+        "bacon sizzling pan",
+        "bacon frying",
+        "cooking bacon"
+      ]
+    },
+    {
+      "narration": "Bacon is mostly fat, and that fat needs time to melt out before the meat can turn crisp.",
+      "narration_es": "El tocino es casi pura grasa, y esa grasa necesita tiempo para derretirse antes de que la carne se ponga crujiente.",
+      "visual_queries": [
+        "raw bacon strips",
+        "bacon slices",
+        "raw bacon"
+      ]
+    },
+    {
+      "narration": "So lay the strips in a cold skillet and add just enough water to barely cover them.",
+      "narration_es": "Así que acomoda las tiras en una sartén fría y échale agüita, nomás la necesaria para apenas cubrirlas.",
+      "visual_queries": [
+        "bacon cold skillet",
+        "pouring water pan",
+        "cast iron skillet"
+      ]
+    },
+    {
+      "narration": "Turn the heat to high. While the water boils, it holds the pan at two hundred twelve degrees, gently rendering the fat without browning anything.",
+      "narration_es": "Ponla a fuego alto. Mientras el agua hierve, la sartén se queda en unos cien grados, y la grasa se va soltando sin que nada se dore.",
+      "visual_queries": [
+        "water boiling pan",
+        "simmering skillet",
+        "stove burner flame"
+      ]
+    },
+    {
+      "narration": "Once the water cooks off, drop the heat to medium low and let the bacon fry in its own fat, flipping now and then.",
+      "narration_es": "Cuando el agua se evapore, bájale a fuego medio bajo y deja que el tocino se fría en su propia grasa, volteándolo de vez en cuando.",
+      "visual_queries": [
+        "flipping bacon tongs",
+        "bacon frying grease",
+        "bacon in pan"
+      ]
+    },
+    {
+      "narration": "Move it to a wire rack instead of paper towels, so the bottom does not steam and go soft.",
+      "narration_es": "Pásalo a una rejilla en lugar de servilletas de papel, para que no se cueza al vapor por abajo y se aguade.",
+      "visual_queries": [
+        "bacon cooling rack",
+        "crispy bacon strips",
+        "cooked bacon plate"
+      ]
+    },
+    {
+      "narration": "Water first, then fire. That is how you get bacon that actually snaps.",
+      "narration_es": "Primero agua, luego fuego. Así sale el tocino que de verdad truena al morderlo.",
+      "visual_queries": [
+        "breaking crispy bacon",
+        "crispy bacon closeup",
+        "bacon breakfast"
+      ]
+    }
+  ]
+}

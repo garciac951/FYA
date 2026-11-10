@@ -117,6 +117,29 @@
           "url": "https://youtube.com/shorts/3uMiprhT-S8"
         }
       }
+    },
+    {
+      "date": "2026-11-10T02:45:00+00:00",
+      "topic": "cooking",
+      "title": "The Water Trick for Crispier Stovetop Bacon",
+      "idea": "Best way to cook bacon on stove top to get crunchy bacon",
+      "run": "10",
+      "redo_of": null,
+      "upload_mode": "private",
+      "versions": {
+        "en": {
+          "title": "The Water Trick for Crispier Stovetop Bacon",
+          "file": "output/20261110-0244-the-water-trick-for-crispier-stovetop-bacon/short-en.mp4",
+          "youtube_id": "3yTX7r6EAxU",
+          "url": "https://youtube.com/shorts/3yTX7r6EAxU"
+        },
+        "es": {
+          "title": "El truco del agua para tocino súper crujiente",
+          "file": "output/20261110-0244-the-water-trick-for-crispier-stovetop-bacon/short-es.mp4",
+          "youtube_id": "-eXLXpuMLZs",
+          "url": "https://youtube.com/shorts/-eXLXpuMLZs"
+        }
+      }
     }
   ]
 }
