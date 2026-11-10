@@ -94,6 +94,29 @@
           "file": "output/20261109-2348-the-football-huddle-was-invented-by-deaf-players/short-es.mp4"
         }
       }
+    },
+    {
+      "date": "2026-11-10T02:30:58+00:00",
+      "topic": "basketball",
+      "title": "Why the Basketball Rim Is Exactly Ten Feet High",
+      "idea": null,
+      "run": "9",
+      "redo_of": null,
+      "upload_mode": "public",
+      "versions": {
+        "en": {
+          "title": "Why the Basketball Rim Is Exactly Ten Feet High",
+          "file": "output/20261110-0230-why-the-basketball-rim-is-exactly-ten-feet-high/short-en.mp4",
+          "youtube_id": "vyfu9KvRiHo",
+          "url": "https://youtube.com/shorts/vyfu9KvRiHo"
+        },
+        "es": {
+          "title": "Por qué el aro de básquetbol mide 3 metros",
+          "file": "output/20261110-0230-why-the-basketball-rim-is-exactly-ten-feet-high/short-es.mp4",
+          "youtube_id": "3uMiprhT-S8",
+          "url": "https://youtube.com/shorts/3uMiprhT-S8"
+        }
+      }
     }
   ]
 }

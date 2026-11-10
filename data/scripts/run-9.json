@@ -1,0 +1,92 @@
+{
+  "topic_id": "basketball",
+  "title": "Why the Basketball Rim Is Exactly Ten Feet High",
+  "description": "The ten-foot rim wasn't chosen by science. It came from the height of a gym balcony in 1891, and that same balcony is the reason backboards exist.\n\n#basketball #hoops #shorts",
+  "tags": [
+    "basketball history",
+    "why is the rim ten feet",
+    "peach basket basketball",
+    "james naismith",
+    "origin of basketball",
+    "basketball backboard history",
+    "nba trivia",
+    "hoops facts"
+  ],
+  "title_es": "Por qué el aro de básquetbol mide 3 metros",
+  "description_es": "La altura del aro no salió de ningún cálculo. Salió de un balcón de gimnasio en 1891, y ese mismo balcón es la razón de que existan los tableros.\n\n#basquetbol #historia #shorts",
+  "tags_es": [
+    "historia del basquetbol",
+    "altura del aro",
+    "canasta de duraznos",
+    "james naismith",
+    "origen del basquetbol",
+    "historia del tablero",
+    "datos curiosos nba",
+    "baloncesto"
+  ],
+  "segments": [
+    {
+      "narration": "The basketball rim is ten feet high for a pretty random reason. That's just where a gym balcony happened to be.",
+      "narration_es": "El aro de básquetbol mide tres metros por una razón bien random. Ahí estaba el balcón de un gimnasio.",
+      "visual_queries": [
+        "basketball hoop low angle",
+        "basketball rim net",
+        "basketball court"
+      ]
+    },
+    {
+      "narration": "In eighteen ninety-one, a teacher named James Naismith needed an indoor game for restless students in Springfield, Massachusetts.",
+      "narration_es": "En mil ochocientos noventa y uno, un maestro llamado James Naismith buscaba un juego bajo techo para sus alumnos inquietos en Springfield, Massachusetts.",
+      "visual_queries": [
+        "old gymnasium interior",
+        "vintage gym",
+        "snowy winter town"
+      ]
+    },
+    {
+      "narration": "He nailed two peach baskets to the railing of the gym's running track, which hung exactly ten feet off the floor.",
+      "narration_es": "Clavó dos canastas de duraznos al barandal de la pista para correr del gimnasio, que estaba justo a tres metros del piso.",
+      "visual_queries": [
+        "wooden peach basket",
+        "woven fruit basket",
+        "gym balcony railing"
+      ]
+    },
+    {
+      "narration": "The baskets still had bottoms, so after every score, someone had to climb up and fetch the ball.",
+      "narration_es": "Las canastas todavía tenían fondo, así que cada vez que alguien anotaba, otro tenía que subir a sacar el balón.",
+      "visual_queries": [
+        "climbing wooden ladder",
+        "ladder against wall",
+        "basketball in basket"
+      ]
+    },
+    {
+      "narration": "That balcony caused another problem. Fans leaning over the railing would reach out and swat shots away.",
+      "narration_es": "Ese balcón trajo otro problema. Los aficionados se asomaban por el barandal y desviaban los tiros con la mano.",
+      "visual_queries": [
+        "basketball shot blocked",
+        "crowd cheering arena",
+        "basketball fans"
+      ]
+    },
+    {
+      "narration": "So by eighteen ninety-five, backboards were added to keep the crowd out of the game.",
+      "narration_es": "Por eso, para mil ochocientos noventa y cinco, agregaron tableros para que el público ya no se metiera en el juego.",
+      "visual_queries": [
+        "basketball backboard closeup",
+        "ball hitting backboard",
+        "basketball hoop"
+      ]
+    },
+    {
+      "narration": "More than a century later, every pro still shoots at the height of one old gym balcony.",
+      "narration_es": "Más de un siglo después, todos los profesionales siguen tirando a la altura de aquel viejo balcón.",
+      "visual_queries": [
+        "basketball slam dunk",
+        "basketball player shooting",
+        "basketball game arena"
+      ]
+    }
+  ]
+}
