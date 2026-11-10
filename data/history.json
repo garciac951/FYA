@@ -140,6 +140,25 @@
           "url": "https://youtube.com/shorts/-eXLXpuMLZs"
         }
       }
+    },
+    {
+      "date": "2026-11-10T21:22:04+00:00",
+      "topic": "phone-tips",
+      "title": "Why Deleting Photos Doesn't Free Up Storage",
+      "idea": null,
+      "run": "12",
+      "redo_of": null,
+      "upload_mode": "none",
+      "versions": {
+        "en": {
+          "title": "Why Deleting Photos Doesn't Free Up Storage",
+          "file": "output/20261110-2121-why-deleting-photos-doesn-t-free-up-storage/short-en.mp4"
+        },
+        "es": {
+          "title": "Borraste fotos y tu celular sigue lleno",
+          "file": "output/20261110-2121-why-deleting-photos-doesn-t-free-up-storage/short-es.mp4"
+        }
+      }
     }
   ]
 }

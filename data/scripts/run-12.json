@@ -1,0 +1,92 @@
+{
+  "topic_id": "phone-tips",
+  "title": "Why Deleting Photos Doesn't Free Up Storage",
+  "description": "On both iPhone and Android, deleted photos move to a trash folder and keep using space for weeks. Empty it to get your storage back right away.\n\n#shorts #iphone #android",
+  "tags": [
+    "phone storage full",
+    "free up phone storage",
+    "recently deleted photos",
+    "iphone storage tips",
+    "android storage tips",
+    "google photos trash",
+    "delete photos permanently",
+    "phone cleanup"
+  ],
+  "title_es": "Borraste fotos y tu celular sigue lleno",
+  "description_es": "En iPhone y Android, las fotos que borras se van a una papelera y siguen ocupando espacio por semanas. Vacíala y recupera tu almacenamiento al instante.\n\n#shorts #celular #trucostecnologicos",
+  "tags_es": [
+    "almacenamiento lleno celular",
+    "liberar espacio celular",
+    "fotos eliminadas recientemente",
+    "trucos iphone",
+    "trucos android",
+    "papelera google photos",
+    "borrar fotos definitivamente",
+    "limpiar celular"
+  ],
+  "segments": [
+    {
+      "narration": "You just deleted five hundred photos, and your phone storage didn't budge.",
+      "narration_es": "Acabas de borrar quinientas fotos y tu celular sigue igual de lleno.",
+      "visual_queries": [
+        "deleting photos smartphone",
+        "scrolling phone gallery",
+        "smartphone screen hands"
+      ]
+    },
+    {
+      "narration": "On iPhone and Android, deleted photos just move to a holding folder, and they still take up space.",
+      "narration_es": "En iPhone y en Android, las fotos borradas solo se mueven a una carpeta temporal, y siguen ocupando espacio.",
+      "visual_queries": [
+        "phone storage full",
+        "smartphone photo gallery",
+        "person using smartphone"
+      ]
+    },
+    {
+      "narration": "On iPhone, open the Photos app and find the album called Recently Deleted. Items sit there for about thirty days.",
+      "narration_es": "En iPhone, abre la app de Fotos y busca el álbum Eliminado recientemente. Ahí se quedan unos treinta días.",
+      "visual_queries": [
+        "iphone photos app",
+        "iphone in hand",
+        "smartphone close up"
+      ]
+    },
+    {
+      "narration": "On Android, open your gallery or photos app and look for Trash or Bin. Google Photos can keep backed up items there for sixty days.",
+      "narration_es": "En Android, abre tu galería o tu app de fotos y busca Papelera. Google Fotos puede guardar ahí tus fotos respaldadas hasta sesenta días.",
+      "visual_queries": [
+        "android phone gallery",
+        "android smartphone hand",
+        "smartphone touchscreen"
+      ]
+    },
+    {
+      "narration": "Empty it completely, and that's when the space finally comes back.",
+      "narration_es": "Vacíala por completo, y en ese momento por fin recuperas el espacio.",
+      "visual_queries": [
+        "tapping phone screen",
+        "finger touching smartphone",
+        "smartphone screen hands"
+      ]
+    },
+    {
+      "narration": "Check it first, because this step is permanent.",
+      "narration_es": "Eso sí, revísala antes, porque ya no hay vuelta atrás.",
+      "visual_queries": [
+        "looking at phone photos",
+        "scrolling smartphone photos",
+        "person holding phone"
+      ]
+    },
+    {
+      "narration": "So next time storage looks stuck, empty the trash you forgot you had.",
+      "narration_es": "Así que la próxima vez que tu celular no libere espacio, vacía esa papelera que ni sabías que tenías.",
+      "visual_queries": [
+        "smiling person smartphone",
+        "relaxed phone use",
+        "person using smartphone"
+      ]
+    }
+  ]
+}
