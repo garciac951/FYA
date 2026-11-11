@@ -1,0 +1,92 @@
+{
+  "topic_id": "computer-tips",
+  "title": "Stop Cropping Screenshots: Grab One Window Instantly",
+  "description": "On macOS, press Command Shift 4 and then the space bar to capture a single window. On Windows 11, Alt plus Print Screen copies just the active window. No cropping needed.\n\n#techtips #mac #shorts",
+  "tags": [
+    "screenshot one window",
+    "mac screenshot shortcut",
+    "windows 11 screenshot",
+    "command shift 4 space",
+    "alt print screen",
+    "screenshot without cropping",
+    "computer tips",
+    "macos tips"
+  ],
+  "title_es": "Deja de recortar capturas: toma solo una ventana",
+  "description_es": "En macOS, presiona Comando Shift 4 y luego la barra espaciadora para capturar una sola ventana. En Windows 11, Alt más Imprimir Pantalla copia solo la ventana activa.\n\n#trucostecnologicos #computacion #shorts",
+  "tags_es": [
+    "captura de pantalla ventana",
+    "atajo captura mac",
+    "captura windows 11",
+    "comando shift 4",
+    "alt imprimir pantalla",
+    "trucos de computadora",
+    "tips de mac",
+    "tips de windows"
+  ],
+  "segments": [
+    {
+      "narration": "You're wasting time cropping screenshots when your computer can grab one window perfectly.",
+      "narration_es": "Estás perdiendo tiempo recortando capturas, cuando tu compu puede tomar una sola ventana perfecta.",
+      "visual_queries": [
+        "cropping image computer",
+        "laptop screen editing",
+        "person using laptop"
+      ]
+    },
+    {
+      "narration": "On a Mac, press Command, Shift, and four. Then tap the space bar, and your cursor turns into a little camera.",
+      "narration_es": "En una Mac, presiona Comando, Shift y el cuatro. Luego toca la barra espaciadora y tu cursor se convierte en una camarita.",
+      "visual_queries": [
+        "mac keyboard typing",
+        "laptop keyboard closeup",
+        "typing on keyboard"
+      ]
+    },
+    {
+      "narration": "Click any window, and macOS captures just that window, edges and all, with a soft shadow behind it.",
+      "narration_es": "Haz clic en cualquier ventana y macOS captura solo esa ventana, completita, con una sombra suave detrás.",
+      "visual_queries": [
+        "clicking trackpad laptop",
+        "macbook screen closeup",
+        "laptop on desk"
+      ]
+    },
+    {
+      "narration": "If you don't want the shadow, hold the Option key while you click.",
+      "narration_es": "Si no quieres la sombra, mantén presionada la tecla Opción mientras haces clic.",
+      "visual_queries": [
+        "finger pressing key",
+        "keyboard keys closeup",
+        "computer keyboard"
+      ]
+    },
+    {
+      "narration": "On Windows 11, press Alt and Print Screen together. That copies only the active window to your clipboard.",
+      "narration_es": "En Windows 11, presiona Alt e Imprimir Pantalla al mismo tiempo. Eso copia solo la ventana activa al portapapeles.",
+      "visual_queries": [
+        "windows laptop keyboard",
+        "pc keyboard typing",
+        "desktop computer office"
+      ]
+    },
+    {
+      "narration": "Then paste it into an email, a chat, or a document with Control V.",
+      "narration_es": "Después la pegas en un correo, un chat o un documento con Control V.",
+      "visual_queries": [
+        "writing email laptop",
+        "typing document computer",
+        "working on computer"
+      ]
+    },
+    {
+      "narration": "No cropping, no stray taskbar, and no messy desktop in the background. You get just the window you meant to share.",
+      "narration_es": "Sin recortar, sin la barra de tareas y sin tu escritorio desordenado atrás. Solo la ventana que querías compartir.",
+      "visual_queries": [
+        "clean computer screen",
+        "tidy desk laptop",
+        "laptop workspace"
+      ]
+    }
+  ]
+}

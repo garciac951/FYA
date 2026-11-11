@@ -182,6 +182,25 @@
           "url": "https://youtube.com/shorts/DWeHrLF1qPQ"
         }
       }
+    },
+    {
+      "date": "2026-11-11T22:02:43+00:00",
+      "topic": "computer-tips",
+      "title": "Stop Cropping Screenshots: Grab One Window Instantly",
+      "idea": null,
+      "run": "14",
+      "redo_of": null,
+      "upload_mode": "none",
+      "versions": {
+        "en": {
+          "title": "Stop Cropping Screenshots: Grab One Window Instantly",
+          "file": "output/20261111-2202-stop-cropping-screenshots-grab-one-window-instantl/short-en.mp4"
+        },
+        "es": {
+          "title": "Deja de recortar capturas: toma solo una ventana",
+          "file": "output/20261111-2202-stop-cropping-screenshots-grab-one-window-instantl/short-es.mp4"
+        }
+      }
     }
   ]
 }
