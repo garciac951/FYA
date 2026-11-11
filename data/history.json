@@ -159,6 +159,29 @@
           "file": "output/20261110-2121-why-deleting-photos-doesn-t-free-up-storage/short-es.mp4"
         }
       }
+    },
+    {
+      "date": "2026-11-11T02:57:43+00:00",
+      "topic": "mechanics",
+      "title": "Your Engine's Temperature Is Run by Melting Wax",
+      "idea": null,
+      "run": "13",
+      "redo_of": null,
+      "upload_mode": "public",
+      "versions": {
+        "en": {
+          "title": "Your Engine's Temperature Is Run by Melting Wax",
+          "file": "output/20261111-0257-your-engine-s-temperature-is-run-by-melting-wax/short-en.mp4",
+          "youtube_id": "Y_dkZNj9-dU",
+          "url": "https://youtube.com/shorts/Y_dkZNj9-dU"
+        },
+        "es": {
+          "title": "La temperatura de tu motor depende de cera",
+          "file": "output/20261111-0257-your-engine-s-temperature-is-run-by-melting-wax/short-es.mp4",
+          "youtube_id": "DWeHrLF1qPQ",
+          "url": "https://youtube.com/shorts/DWeHrLF1qPQ"
+        }
+      }
     }
   ]
 }

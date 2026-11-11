@@ -1,0 +1,101 @@
+{
+  "topic_id": "mechanics",
+  "title": "Your Engine's Temperature Is Run by Melting Wax",
+  "description": "A car thermostat has no electronics inside. A small capsule of wax melts, expands, and pushes the valve open to send coolant to the radiator.\n\n#mechanic #cartips #shorts",
+  "tags": [
+    "how a thermostat works",
+    "car thermostat",
+    "engine overheating",
+    "thermostat stuck open",
+    "cooling system",
+    "car maintenance",
+    "diy car repair",
+    "wax pellet thermostat"
+  ],
+  "title_es": "La temperatura de tu motor depende de cera",
+  "description_es": "El termostato de tu carro no tiene nada electrónico. Una cápsula de cera se derrite, se expande y abre la válvula para mandar el anticongelante al radiador.\n\n#mecanica #autos #shorts",
+  "tags_es": [
+    "como funciona el termostato",
+    "termostato de carro",
+    "motor se calienta",
+    "termostato pegado",
+    "sistema de enfriamiento",
+    "mantenimiento de auto",
+    "mecanica automotriz",
+    "reparar carro uno mismo"
+  ],
+  "segments": [
+    {
+      "narration": "Your engine's temperature is controlled by a tiny cup of wax.",
+      "narration_es": "La temperatura de tu motor la controla una cápsula chiquita de cera.",
+      "visual_queries": [
+        "engine temperature gauge",
+        "car dashboard gauge",
+        "car engine bay"
+      ]
+    },
+    {
+      "narration": "It lives inside the thermostat, a small valve between the engine and the radiator.",
+      "narration_es": "Está dentro del termostato, una válvula pequeña entre el motor y el radiador.",
+      "visual_queries": [
+        "car thermostat part",
+        "radiator hose engine",
+        "car radiator"
+      ]
+    },
+    {
+      "narration": "When you start a cold engine, the thermostat stays shut. Coolant loops through the engine only, so it warms up fast.",
+      "narration_es": "Cuando arrancas el motor en frío, el termostato se queda cerrado. El anticongelante solo circula por el motor, y así se calienta rápido.",
+      "visual_queries": [
+        "car starting cold morning",
+        "car exhaust cold",
+        "frosty car"
+      ]
+    },
+    {
+      "narration": "That valve holds a sealed copper capsule full of wax. Around one hundred ninety-five degrees, the wax melts and swells.",
+      "narration_es": "Esa válvula tiene una cápsula sellada de cobre llena de cera. A unos noventa grados, la cera se derrite y se expande.",
+      "visual_queries": [
+        "wax melting closeup",
+        "melting wax",
+        "copper metal closeup"
+      ]
+    },
+    {
+      "narration": "That swelling pushes a steel pin, which forces the valve open against a spring. Hot coolant rushes to the radiator to cool off.",
+      "narration_es": "Al expandirse, empuja un perno de acero que abre la válvula contra un resorte. El anticongelante caliente corre al radiador para enfriarse.",
+      "visual_queries": [
+        "coolant flowing radiator",
+        "car radiator fan",
+        "car radiator"
+      ]
+    },
+    {
+      "narration": "When things cool down, the wax shrinks and the spring snaps the valve shut again.",
+      "narration_es": "Cuando todo se enfría, la cera se encoge y el resorte vuelve a cerrar la válvula.",
+      "visual_queries": [
+        "metal spring closeup",
+        "compression spring",
+        "mechanic engine parts"
+      ]
+    },
+    {
+      "narration": "If it sticks open, your heater blows lukewarm and the gauge never climbs. If it sticks closed, the engine overheats.",
+      "narration_es": "Si se pega abierto, la calefacción sale tibia y la aguja no sube. Si se pega cerrado, el motor se sobrecalienta.",
+      "visual_queries": [
+        "car overheating steam",
+        "steam car hood",
+        "broken down car"
+      ]
+    },
+    {
+      "narration": "No wires, no computer. Just wax melting, doing the same job it has for decades.",
+      "narration_es": "Sin cables y sin computadora. Solo cera derritiéndose, haciendo el mismo trabajo desde hace décadas.",
+      "visual_queries": [
+        "mechanic replacing thermostat",
+        "mechanic working engine",
+        "car engine repair"
+      ]
+    }
+  ]
+}
