@@ -224,6 +224,25 @@
           "url": "https://youtube.com/shorts/2KHUtziGmM4"
         }
       }
+    },
+    {
+      "date": "2026-11-12T21:53:14+00:00",
+      "topic": "beer",
+      "title": "Why Your IPA Makes Hot Wings Burn Hotter",
+      "idea": null,
+      "run": "16",
+      "redo_of": null,
+      "upload_mode": "none",
+      "versions": {
+        "en": {
+          "title": "Why Your IPA Makes Hot Wings Burn Hotter",
+          "file": "output/20261112-2153-why-your-ipa-makes-hot-wings-burn-hotter/short-en.mp4"
+        },
+        "es": {
+          "title": "Tu IPA hace que las alitas piquen más",
+          "file": "output/20261112-2153-why-your-ipa-makes-hot-wings-burn-hotter/short-es.mp4"
+        }
+      }
     }
   ]
 }

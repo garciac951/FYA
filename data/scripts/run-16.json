@@ -1,0 +1,83 @@
+{
+  "topic_id": "beer",
+  "title": "Why Your IPA Makes Hot Wings Burn Hotter",
+  "description": "Hop bitterness and alcohol amplify chili heat, so a malty, low-bitterness lager is the smarter pick for spicy food. Save the IPA for rich, fatty dishes. Enjoy responsibly, 21+.\n\n#beer #craftbeer #shorts",
+  "tags": [
+    "beer food pairing",
+    "ipa and spicy food",
+    "best beer for hot wings",
+    "beer pairing tips",
+    "craft beer",
+    "amber lager",
+    "vienna lager",
+    "beer with burgers"
+  ],
+  "title_es": "Tu IPA hace que las alitas piquen más",
+  "description_es": "El amargor del lúpulo y el alcohol intensifican el picante, así que una lager maltosa y poco amarga combina mejor con comida picosa. Guarda la IPA para platillos grasosos. Solo para mayores de 21, con moderación.\n\n#cerveza #cervezaartesanal #shorts",
+  "tags_es": [
+    "maridaje de cerveza",
+    "cerveza y comida picante",
+    "ipa y alitas",
+    "cerveza artesanal",
+    "lager ámbar",
+    "lager estilo viena",
+    "consejos de cerveza",
+    "cerveza con hamburguesa"
+  ],
+  "segments": [
+    {
+      "narration": "That hoppy IPA you ordered with your hot wings is making them burn hotter.",
+      "narration_es": "Esa IPA bien lupulada que pediste con tus alitas picosas está haciendo que piquen todavía más.",
+      "visual_queries": [
+        "beer with chicken wings",
+        "hot wings plate",
+        "craft beer glass"
+      ]
+    },
+    {
+      "narration": "Hop bitterness and alcohol both amplify the heat from chili peppers, so every sip turns up the fire instead of putting it out.",
+      "narration_es": "El amargor del lúpulo y el alcohol intensifican el picante del chile, así que cada trago le sube al fuego en lugar de apagarlo.",
+      "visual_queries": [
+        "hops close up",
+        "red chili peppers",
+        "hot peppers"
+      ]
+    },
+    {
+      "narration": "Beer pros pair spicy food with something malty and lower in bitterness, like an amber lager or a Vienna-style lager.",
+      "narration_es": "Los expertos en cerveza acompañan la comida picosa con algo más maltoso y menos amargo, como una lager ámbar o una lager estilo Viena.",
+      "visual_queries": [
+        "amber beer pouring",
+        "amber lager glass",
+        "beer pouring glass"
+      ]
+    },
+    {
+      "narration": "The touch of malt sweetness calms the burn, and the bubbles help scrub the oil off your tongue.",
+      "narration_es": "Ese toque dulce de la malta calma el ardor, y las burbujas te ayudan a limpiar la grasa de la lengua.",
+      "visual_queries": [
+        "beer bubbles close up",
+        "malted barley grains",
+        "beer foam"
+      ]
+    },
+    {
+      "narration": "Save the IPA for rich, fatty food, like a cheeseburger or fried fish, where that bitterness cuts right through.",
+      "narration_es": "La IPA guárdala para comida rica en grasa, como una hamburguesa con queso o pescado frito, donde ese amargor corta perfecto.",
+      "visual_queries": [
+        "cheeseburger and beer",
+        "fish and chips",
+        "burger on plate"
+      ]
+    },
+    {
+      "narration": "So match the bitterness to the fat, not the fire, and your wings will finally taste like wings.",
+      "narration_es": "Así que combina el amargor con la grasa, no con el picante, y tus alitas por fin van a saber a alitas.",
+      "visual_queries": [
+        "eating chicken wings",
+        "buffalo wings",
+        "friends sharing food"
+      ]
+    }
+  ]
+}
