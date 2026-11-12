@@ -201,6 +201,29 @@
           "file": "output/20261111-2202-stop-cropping-screenshots-grab-one-window-instantl/short-es.mp4"
         }
       }
+    },
+    {
+      "date": "2026-11-12T02:28:53+00:00",
+      "topic": "dogs",
+      "title": "Why Dogs Kick the Grass After They Poop",
+      "idea": null,
+      "run": "15",
+      "redo_of": null,
+      "upload_mode": "public",
+      "versions": {
+        "en": {
+          "title": "Why Dogs Kick the Grass After They Poop",
+          "file": "output/20261112-0228-why-dogs-kick-the-grass-after-they-poop/short-en.mp4",
+          "youtube_id": "gkNY4mjJ7No",
+          "url": "https://youtube.com/shorts/gkNY4mjJ7No"
+        },
+        "es": {
+          "title": "¿Por qué tu perro patea el pasto después de hacer?",
+          "file": "output/20261112-0228-why-dogs-kick-the-grass-after-they-poop/short-es.mp4",
+          "youtube_id": "2KHUtziGmM4",
+          "url": "https://youtube.com/shorts/2KHUtziGmM4"
+        }
+      }
     }
   ]
 }

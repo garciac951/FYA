@@ -1,0 +1,91 @@
+{
+  "topic_id": "dogs",
+  "title": "Why Dogs Kick the Grass After They Poop",
+  "description": "That back-kicking after a bathroom break isn't your dog cleaning up. Scent glands in the paws turn it into a smell-and-sight message for other dogs.\n\n#dogs #doglover #shorts",
+  "tags": [
+    "why dogs kick grass",
+    "dog kicking after pooping",
+    "dog behavior explained",
+    "dog scent glands",
+    "dog paw scratching",
+    "weird dog behavior",
+    "dog marking territory",
+    "dog facts"
+  ],
+  "title_es": "¿Por qué tu perro patea el pasto después de hacer?",
+  "description_es": "Esas patadas después de hacer del baño no son para tapar nada. Las glándulas de olor en sus patas convierten el gesto en un mensaje para otros perros.\n\n#perros #amantesdelosperros #shorts",
+  "tags_es": [
+    "por qué los perros patean el pasto",
+    "perro patea después de hacer popó",
+    "comportamiento canino",
+    "glándulas de olor en perros",
+    "perro rasca el suelo",
+    "datos curiosos de perros",
+    "perro marca territorio"
+  ],
+  "segments": [
+    {
+      "narration": "That wild back-kick your dog does after pooping has nothing to do with covering it up.",
+      "narration_es": "Esas patadas que da tu perro después de hacer popó no son para taparla.",
+      "visual_queries": [
+        "dog kicking grass",
+        "dog scratching ground",
+        "dog in yard"
+      ]
+    },
+    {
+      "narration": "Wolves and wild dogs do the exact same move, and they aren't burying anything either.",
+      "narration_es": "Los lobos y los perros salvajes hacen exactamente lo mismo, y tampoco están enterrando nada.",
+      "visual_queries": [
+        "wolf in forest",
+        "wild dog pack",
+        "wolf walking"
+      ]
+    },
+    {
+      "narration": "Your dog's paws have scent glands, and scraping the ground leaves behind their own personal smell.",
+      "narration_es": "Las patas de tu perro tienen glándulas de olor, y al rascar el suelo dejan su aroma personal.",
+      "visual_queries": [
+        "dog paw pads closeup",
+        "dog paw",
+        "dog feet grass"
+      ]
+    },
+    {
+      "narration": "The torn-up grass works as a visual sign too, like a little flag that says someone was here.",
+      "narration_es": "Además, el pasto removido funciona como señal visual, como una banderita que dice que alguien pasó por aquí.",
+      "visual_queries": [
+        "torn grass dirt",
+        "grass patch closeup",
+        "green lawn"
+      ]
+    },
+    {
+      "narration": "So it's a double message, a smell and a mark, layered on top of the poop itself.",
+      "narration_es": "Es un mensaje doble, olor y marca, encima de lo que ya dejó en el suelo.",
+      "visual_queries": [
+        "dog sniffing ground",
+        "dog sniffing grass",
+        "dog on walk"
+      ]
+    },
+    {
+      "narration": "It's normal, so there's no need to scold it. If the paws ever look raw or red, check with your vet.",
+      "narration_es": "Es algo normal, así que no lo regañes. Pero si ves sus patas rojas o lastimadas, llévalo con el veterinario.",
+      "visual_queries": [
+        "vet checking dog paw",
+        "veterinarian with dog",
+        "happy dog owner"
+      ]
+    },
+    {
+      "narration": "Your dog isn't being tidy. They're signing their work.",
+      "narration_es": "Tu perro no está limpiando. Está firmando su obra.",
+      "visual_queries": [
+        "proud dog running",
+        "dog running grass",
+        "happy dog park"
+      ]
+    }
+  ]
+}
