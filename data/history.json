@@ -243,6 +243,29 @@
           "file": "output/20261112-2153-why-your-ipa-makes-hot-wings-burn-hotter/short-es.mp4"
         }
       }
+    },
+    {
+      "date": "2026-11-13T01:41:06+00:00",
+      "topic": "raising-a-boy",
+      "title": "Your Son's Screen Habit Starts With Your Phone",
+      "idea": null,
+      "run": "17",
+      "redo_of": null,
+      "upload_mode": "public",
+      "versions": {
+        "en": {
+          "title": "Your Son's Screen Habit Starts With Your Phone",
+          "file": "output/20261113-0140-your-son-s-screen-habit-starts-with-your-phone/short-en.mp4",
+          "youtube_id": "DszKqUGkjWc",
+          "url": "https://youtube.com/shorts/DszKqUGkjWc"
+        },
+        "es": {
+          "title": "El hábito de pantallas de tu hijo empieza en tu celular",
+          "file": "output/20261113-0140-your-son-s-screen-habit-starts-with-your-phone/short-es.mp4",
+          "youtube_id": "-43juuWYwVM",
+          "url": "https://youtube.com/shorts/-43juuWYwVM"
+        }
+      }
     }
   ]
 }
