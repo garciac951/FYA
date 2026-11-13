@@ -266,6 +266,25 @@
           "url": "https://youtube.com/shorts/-43juuWYwVM"
         }
       }
+    },
+    {
+      "date": "2026-11-13T21:28:29+00:00",
+      "topic": "bermuda-grass-texas",
+      "title": "February in Texas: Stop Crabgrass Before It Sprouts",
+      "idea": null,
+      "run": "18",
+      "redo_of": null,
+      "upload_mode": "none",
+      "versions": {
+        "en": {
+          "title": "February in Texas: Stop Crabgrass Before It Sprouts",
+          "file": "output/20261113-2128-february-in-texas-stop-crabgrass-before-it-sprouts/short-en.mp4"
+        },
+        "es": {
+          "title": "Febrero en Texas: frena el crabgrass antes de que salga",
+          "file": "output/20261113-2128-february-in-texas-stop-crabgrass-before-it-sprouts/short-es.mp4"
+        }
+      }
     }
   ]
 }
