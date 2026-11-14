@@ -285,6 +285,25 @@
           "file": "output/20261113-2128-february-in-texas-stop-crabgrass-before-it-sprouts/short-es.mp4"
         }
       }
+    },
+    {
+      "date": "2026-11-14T19:59:13+00:00",
+      "topic": "football",
+      "title": "The Texas Legend Who Never Got in the Game",
+      "idea": null,
+      "run": "19",
+      "redo_of": null,
+      "upload_mode": "none",
+      "versions": {
+        "en": {
+          "title": "The Texas Legend Who Never Got in the Game",
+          "file": "output/20261114-1959-the-texas-legend-who-never-got-in-the-game/short-en.mp4"
+        },
+        "es": {
+          "title": "La leyenda de Texas que nunca entró al juego",
+          "file": "output/20261114-1959-the-texas-legend-who-never-got-in-the-game/short-es.mp4"
+        }
+      }
     }
   ]
 }

@@ -1,0 +1,91 @@
+{
+  "topic_id": "football",
+  "title": "The Texas Legend Who Never Got in the Game",
+  "description": "In 1922, a Texas A&M student was pulled from the press box to suit up, and his wait on the sideline started a tradition that still fills Kyle Field today.\n\n#football #collegefootball #shorts",
+  "tags": [
+    "texas a&m 12th man",
+    "12th man origin",
+    "e king gill",
+    "college football history",
+    "texas football lore",
+    "aggie traditions",
+    "dixie classic 1922",
+    "college football traditions"
+  ],
+  "title_es": "La leyenda de Texas que nunca entró al juego",
+  "description_es": "En 1922, un estudiante de Texas A&M bajó del palco de prensa para ponerse el uniforme, y su espera en la banca creó una tradición que sigue viva hoy.\n\n#futbolamericano #futbolcolegial #shorts",
+  "tags_es": [
+    "12th man texas a&m",
+    "origen del doceavo hombre",
+    "historia del futbol americano",
+    "tradiciones aggies",
+    "futbol americano colegial",
+    "leyendas de texas",
+    "e king gill"
+  ],
+  "segments": [
+    {
+      "narration": "The most famous player in Texas A&M history became a legend standing on the sideline.",
+      "narration_es": "El jugador más famoso en la historia de Texas A&M se volvió leyenda sin salir de la banca.",
+      "visual_queries": [
+        "football player sideline",
+        "football sideline",
+        "american football stadium"
+      ]
+    },
+    {
+      "narration": "It was January of 1922, at a bowl game in Dallas. The Aggies faced Centre College, one of the best teams in the country.",
+      "narration_es": "Fue en enero de 1922, en un juego de tazón en Dallas. Los Aggies enfrentaban a Centre College, uno de los mejores equipos del país.",
+      "visual_queries": [
+        "vintage football game",
+        "old football film",
+        "football game crowd"
+      ]
+    },
+    {
+      "narration": "Injuries piled up so fast that the coach worried he would run out of players.",
+      "narration_es": "Las lesiones se acumularon tan rápido que el coach temía quedarse sin jugadores.",
+      "visual_queries": [
+        "injured football player",
+        "football player kneeling",
+        "football coach sideline"
+      ]
+    },
+    {
+      "narration": "So he called a student named King Gill down from the press box, where he was helping reporters identify players.",
+      "narration_es": "Así que llamó a un estudiante, King Gill, que estaba en el palco de prensa ayudando a los reporteros a identificar jugadores.",
+      "visual_queries": [
+        "stadium press box",
+        "stadium upper deck",
+        "football stadium stands"
+      ]
+    },
+    {
+      "narration": "Gill changed into a uniform under the stands and stood ready on the sideline for the rest of the game.",
+      "narration_es": "Gill se puso un uniforme debajo de las gradas y se quedó listo en la banca el resto del partido.",
+      "visual_queries": [
+        "football uniform helmet",
+        "football player ready",
+        "football sideline"
+      ]
+    },
+    {
+      "narration": "He never went in. A&M won twenty two to fourteen, and Gill said he just wanted to be there if his team needed him.",
+      "narration_es": "Nunca entró. A&M ganó veintidós a catorce, y Gill dijo que solo quería estar ahí por si su equipo lo necesitaba.",
+      "visual_queries": [
+        "football team celebrating",
+        "football victory celebration",
+        "football scoreboard"
+      ]
+    },
+    {
+      "narration": "That is why Aggie students still stand for the entire game. Every one of them is the Twelfth Man.",
+      "narration_es": "Por eso los estudiantes Aggies siguen de pie todo el partido. Cada uno de ellos es el Doceavo Hombre.",
+      "visual_queries": [
+        "student section standing",
+        "college football fans",
+        "football stadium crowd"
+      ]
+    }
+  ]
+}
