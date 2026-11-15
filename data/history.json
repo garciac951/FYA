@@ -304,6 +304,25 @@
           "file": "output/20261114-1959-the-texas-legend-who-never-got-in-the-game/short-es.mp4"
         }
       }
+    },
+    {
+      "date": "2026-11-15T20:27:48+00:00",
+      "topic": "fly-fishing",
+      "title": "Why Trout Spot You From Way Down the Bank",
+      "idea": null,
+      "run": "20",
+      "redo_of": null,
+      "upload_mode": "none",
+      "versions": {
+        "en": {
+          "title": "Why Trout Spot You From Way Down the Bank",
+          "file": "output/20261115-2027-why-trout-spot-you-from-way-down-the-bank/short-en.mp4"
+        },
+        "es": {
+          "title": "Por qué la trucha te ve desde tan lejos",
+          "file": "output/20261115-2027-why-trout-spot-you-from-way-down-the-bank/short-es.mp4"
+        }
+      }
     }
   ]
 }

@@ -1,0 +1,92 @@
+{
+  "topic_id": "fly-fishing",
+  "title": "Why Trout Spot You From Way Down the Bank",
+  "description": "Trout see the world above the water through a small circle called Snell's window, and the rest of the surface acts like a mirror. Here is how that changes the way you should approach a river.\n\n#flyfishing #shorts #outdoors",
+  "tags": [
+    "fly fishing tips",
+    "snells window",
+    "how trout see",
+    "trout vision",
+    "dry fly fishing",
+    "stalking trout",
+    "trout behavior",
+    "fly fishing for beginners"
+  ],
+  "title_es": "Por qué la trucha te ve desde tan lejos",
+  "description_es": "Las truchas ven el mundo de afuera a través de un pequeño círculo llamado ventana de Snell, y el resto de la superficie es un espejo. Así cambia tu forma de acercarte al río.\n\n#pescaconmosca #shorts #pesca",
+  "tags_es": [
+    "pesca con mosca",
+    "ventana de snell",
+    "como ven las truchas",
+    "vision de la trucha",
+    "mosca seca",
+    "consejos de pesca",
+    "comportamiento de la trucha",
+    "pesca de trucha"
+  ],
+  "segments": [
+    {
+      "narration": "A trout looking up sees the entire world above the water squeezed into one small circle.",
+      "narration_es": "Cuando una trucha mira hacia arriba, todo el mundo de afuera le cabe en un círculo chiquito.",
+      "visual_queries": [
+        "trout underwater looking",
+        "trout underwater",
+        "river underwater"
+      ]
+    },
+    {
+      "narration": "It's called Snell's window, a cone about ninety-seven degrees wide. Outside that circle, the surface looks like a mirror reflecting the riverbed.",
+      "narration_es": "Se llama la ventana de Snell, un cono de unos noventa y siete grados. Fuera de ese círculo, la superficie parece un espejo que refleja el fondo del río.",
+      "visual_queries": [
+        "underwater surface reflection",
+        "water surface from below",
+        "clear river water"
+      ]
+    },
+    {
+      "narration": "The closer the fish holds to the surface, the smaller that circle gets. A trout one foot down sees a window only about two feet across.",
+      "narration_es": "Entre más cerca de la superficie esté el pez, más chico es ese círculo. Una trucha a treinta centímetros de profundidad ve una ventana de apenas setenta centímetros.",
+      "visual_queries": [
+        "trout shallow stream",
+        "trout in creek",
+        "shallow clear stream"
+      ]
+    },
+    {
+      "narration": "But light bends at the edge of the window. So the trout still sees the bank, and anything standing tall on it, squeezed around the rim.",
+      "narration_es": "Pero la luz se dobla en la orilla de esa ventana. Así que la trucha alcanza a ver la orilla del río y cualquier cosa alta que esté parada ahí.",
+      "visual_queries": [
+        "angler standing riverbank",
+        "fisherman river bank",
+        "river bank trees"
+      ]
+    },
+    {
+      "narration": "That's why a standing angler spooks fish that a kneeling angler never bothers.",
+      "narration_es": "Por eso un pescador parado espanta a las truchas que uno arrodillado ni siquiera molesta.",
+      "visual_queries": [
+        "fisherman kneeling river",
+        "fly fishing river",
+        "fishing stream"
+      ]
+    },
+    {
+      "narration": "And your dry fly? Before it drifts into the window, the trout only sees the tiny dimples its legs press into that mirror.",
+      "narration_es": "¿Y tu mosca seca? Antes de entrar a la ventana, la trucha solo ve las pequeñas marcas que sus patitas hacen en ese espejo.",
+      "visual_queries": [
+        "dry fly floating water",
+        "fly fishing fly",
+        "insect on water"
+      ]
+    },
+    {
+      "narration": "So stay low, cast long, and let the fly slide into the circle on its own.",
+      "narration_es": "Así que agáchate, lanza largo y deja que la mosca entre sola al círculo.",
+      "visual_queries": [
+        "trout rising fly",
+        "fly fishing cast",
+        "fly fishing river"
+      ]
+    }
+  ]
+}
