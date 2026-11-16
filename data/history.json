@@ -323,6 +323,25 @@
           "file": "output/20261115-2027-why-trout-spot-you-from-way-down-the-bank/short-es.mp4"
         }
       }
+    },
+    {
+      "date": "2026-11-16T23:46:51+00:00",
+      "topic": "cooking",
+      "title": "Why Your Steak Turns Gray Instead of Brown",
+      "idea": null,
+      "run": "21",
+      "redo_of": null,
+      "upload_mode": "none",
+      "versions": {
+        "en": {
+          "title": "Why Your Steak Turns Gray Instead of Brown",
+          "file": "output/20261116-2346-why-your-steak-turns-gray-instead-of-brown/short-en.mp4"
+        },
+        "es": {
+          "title": "Por qué tu carne sale gris y no dorada",
+          "file": "output/20261116-2346-why-your-steak-turns-gray-instead-of-brown/short-es.mp4"
+        }
+      }
     }
   ]
 }

@@ -1,0 +1,92 @@
+{
+  "topic_id": "cooking",
+  "title": "Why Your Steak Turns Gray Instead of Brown",
+  "description": "A wet steak can't brown until all that surface moisture boils off, and by then the inside is overcooked. Dry it first and you'll get a real crust every time.\n\n#cooking #bbq #shorts",
+  "tags": [
+    "how to sear steak",
+    "steak crust tips",
+    "why steak turns gray",
+    "dry brine steak",
+    "cooking mistakes",
+    "maillard reaction",
+    "pan seared steak",
+    "grilling tips"
+  ],
+  "title_es": "Por qué tu carne sale gris y no dorada",
+  "description_es": "Si la carne está húmeda, no se dora hasta que se evapore toda esa agua, y para entonces ya se pasó por dentro. Sécala primero y tendrás una costra perfecta.\n\n#cocina #parrilla #shorts",
+  "tags_es": [
+    "como sellar carne",
+    "costra en la carne",
+    "carne gris",
+    "errores de cocina",
+    "reaccion de maillard",
+    "consejos de parrilla",
+    "bistec a la sarten",
+    "salar carne en seco"
+  ],
+  "segments": [
+    {
+      "narration": "Your steak isn't turning gray because the pan is too cold. It's turning gray because the meat is wet.",
+      "narration_es": "Si tu carne sale gris, no es porque el sartén esté frío. Es porque la carne está mojada.",
+      "visual_queries": [
+        "gray steak pan",
+        "raw steak pan",
+        "steak cooking"
+      ]
+    },
+    {
+      "narration": "While water is boiling off the surface, that surface can't get hotter than two hundred twelve degrees.",
+      "narration_es": "Mientras el agua se evapora de la superficie, esa superficie no pasa de cien grados.",
+      "visual_queries": [
+        "steam rising pan",
+        "sizzling meat steam",
+        "boiling water steam"
+      ]
+    },
+    {
+      "narration": "But the browning reaction that builds a deep crust really gets going around three hundred degrees.",
+      "narration_es": "Pero la reacción que dora la carne y forma la costra arranca de verdad como a los ciento cincuenta grados.",
+      "visual_queries": [
+        "seared steak crust",
+        "steak searing close",
+        "grilled steak"
+      ]
+    },
+    {
+      "narration": "So every drop on that steak has to steam away first, while the inside quietly overcooks.",
+      "narration_es": "Así que cada gota tiene que evaporarse primero, y mientras tanto el centro se te va pasando.",
+      "visual_queries": [
+        "overcooked steak sliced",
+        "sliced steak board",
+        "cutting steak"
+      ]
+    },
+    {
+      "narration": "The fix takes thirty seconds. Press the meat firmly with paper towels on every side before it hits the heat.",
+      "narration_es": "La solución toma treinta segundos. Seca bien la carne con papel de cocina por todos lados antes de ponerla al fuego.",
+      "visual_queries": [
+        "patting steak dry",
+        "paper towel meat",
+        "raw steak kitchen"
+      ]
+    },
+    {
+      "narration": "Even better, salt it and leave it uncovered in the fridge overnight. The surface dries out almost like leather.",
+      "narration_es": "Mejor todavía, sálala y déjala destapada en el refri toda la noche. La superficie se seca casi como cuero.",
+      "visual_queries": [
+        "salting raw steak",
+        "steak on rack",
+        "raw beef fridge"
+      ]
+    },
+    {
+      "narration": "Dry meat, hot pan, real crust. That gray steak was never the pan's fault.",
+      "narration_es": "Carne seca, sartén caliente y una costra de verdad. La culpa nunca fue del sartén.",
+      "visual_queries": [
+        "steak cast iron sear",
+        "cast iron steak",
+        "steak dinner"
+      ]
+    }
+  ]
+}
