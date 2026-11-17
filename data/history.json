@@ -342,6 +342,29 @@
           "file": "output/20261116-2346-why-your-steak-turns-gray-instead-of-brown/short-es.mp4"
         }
       }
+    },
+    {
+      "date": "2026-11-17T05:17:34+00:00",
+      "topic": "beer",
+      "title": "The Stout Some Brewers Make With Real Oysters",
+      "idea": null,
+      "run": "22",
+      "redo_of": null,
+      "upload_mode": "public",
+      "versions": {
+        "en": {
+          "title": "The Stout Some Brewers Make With Real Oysters",
+          "file": "output/20261117-0517-the-stout-some-brewers-make-with-real-oysters/short-en.mp4",
+          "youtube_id": "ramFWhZSztU",
+          "url": "https://youtube.com/shorts/ramFWhZSztU"
+        },
+        "es": {
+          "title": "La cerveza negra que se hace con ostiones",
+          "file": "output/20261117-0517-the-stout-some-brewers-make-with-real-oysters/short-es.mp4",
+          "youtube_id": "n_hRYu-RvPg",
+          "url": "https://youtube.com/shorts/n_hRYu-RvPg"
+        }
+      }
     }
   ]
 }

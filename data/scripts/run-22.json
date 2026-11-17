@@ -1,0 +1,90 @@
+{
+  "topic_id": "beer",
+  "title": "The Stout Some Brewers Make With Real Oysters",
+  "description": "Stout and oysters started as a cheap London pub pairing, and it worked so well that some brewers began adding oysters to the beer itself. Here's why roasted malt and briny shellfish click.\n\n#beer #craftbeer #shorts",
+  "tags": [
+    "beer and food pairing",
+    "stout and oysters",
+    "oyster stout",
+    "craft beer pairing",
+    "dark beer with seafood",
+    "beer history",
+    "what beer goes with oysters"
+  ],
+  "title_es": "La cerveza negra que se hace con ostiones",
+  "description_es": "Los ostiones y la cerveza negra empezaron como botana barata en las tabernas de Londres, y combinaban tan bien que algunos cerveceros metieron ostiones a la cerveza. Te explico por qué funciona.\n\n#cerveza #cervezaartesanal #shorts",
+  "tags_es": [
+    "maridaje de cerveza",
+    "cerveza y ostiones",
+    "stout con ostiones",
+    "cerveza artesanal",
+    "cerveza oscura con mariscos",
+    "historia de la cerveza",
+    "qué cerveza va con ostiones"
+  ],
+  "segments": [
+    {
+      "narration": "Some brewers make a stout with real oysters in the kettle.",
+      "narration_es": "Hay cerveceros que preparan una cerveza negra con ostiones de verdad dentro de la olla.",
+      "visual_queries": [
+        "fresh oysters shells",
+        "brewing kettle beer",
+        "dark beer glass"
+      ]
+    },
+    {
+      "narration": "It started as a pairing. In nineteenth-century London, oysters were cheap pub food, and dark porter was the everyday beer.",
+      "narration_es": "Todo empezó como una combinación. En el Londres del siglo diecinueve, los ostiones eran botana barata de taberna, y la cerveza oscura era la de todos los días.",
+      "visual_queries": [
+        "old pub interior",
+        "london old street",
+        "pub bar counter"
+      ]
+    },
+    {
+      "narration": "The roasted malt tastes like coffee and dark toast, a perfect frame for a salty, briny oyster.",
+      "narration_es": "La malta tostada sabe a café y a pan bien dorado, justo lo que necesita un ostión salado con sabor a mar.",
+      "visual_queries": [
+        "roasted malt grains",
+        "stout pouring glass",
+        "oysters on ice"
+      ]
+    },
+    {
+      "narration": "Bubbles and gentle bitterness rinse your palate, so the next oyster tastes as fresh as the first.",
+      "narration_es": "Las burbujas y ese amargor suave te limpian la boca, así que el siguiente ostión sabe tan fresco como el primero.",
+      "visual_queries": [
+        "beer bubbles closeup",
+        "beer foam glass",
+        "oyster platter lemon"
+      ]
+    },
+    {
+      "narration": "By the early nineteen hundreds, some brewers took the hint and added oysters or shells right into the brew.",
+      "narration_es": "A principios del siglo veinte, algunos cerveceros captaron la idea y echaron ostiones o sus conchas directo a la cocción.",
+      "visual_queries": [
+        "oyster shells pile",
+        "brewery tanks",
+        "beer brewing process"
+      ]
+    },
+    {
+      "narration": "Done right, it doesn't taste fishy. It just finishes rounder and a little more savory.",
+      "narration_es": "Bien hecha, no sabe a pescado. Solo deja un final más redondo y un poquito más sabroso.",
+      "visual_queries": [
+        "stout beer tasting",
+        "dark beer glass",
+        "beer glass table"
+      ]
+    },
+    {
+      "narration": "So next time you order a dozen, skip the usual and try a dry stout.",
+      "narration_es": "Así que la próxima vez que pidas una docena, olvídate de lo de siempre y pruébalos con una stout seca.",
+      "visual_queries": [
+        "oysters and beer",
+        "seafood restaurant table",
+        "oysters on ice"
+      ]
+    }
+  ]
+}
