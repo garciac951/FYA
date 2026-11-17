@@ -365,6 +365,25 @@
           "url": "https://youtube.com/shorts/n_hRYu-RvPg"
         }
       }
+    },
+    {
+      "date": "2026-11-17T22:59:24+00:00",
+      "topic": "phone-tips",
+      "title": "Stop Deleting Apps to Free Up Space",
+      "idea": null,
+      "run": "23",
+      "redo_of": null,
+      "upload_mode": "none",
+      "versions": {
+        "en": {
+          "title": "Stop Deleting Apps to Free Up Space",
+          "file": "output/20261117-2259-stop-deleting-apps-to-free-up-space/short-en.mp4"
+        },
+        "es": {
+          "title": "Deja de borrar apps para liberar espacio",
+          "file": "output/20261117-2259-stop-deleting-apps-to-free-up-space/short-es.mp4"
+        }
+      }
     }
   ]
 }

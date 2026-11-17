@@ -1,0 +1,92 @@
+{
+  "topic_id": "phone-tips",
+  "title": "Stop Deleting Apps to Free Up Space",
+  "description": "iPhone and Android can both remove an app while keeping its data, so you free up space without losing your progress. Offload on iPhone, archive on Android.\n\n#shorts #iphone #techtips",
+  "tags": [
+    "free up phone storage",
+    "offload apps iphone",
+    "archive apps android",
+    "phone storage full",
+    "iphone storage tips",
+    "android storage tips",
+    "delete apps without losing data",
+    "smartphone tips"
+  ],
+  "title_es": "Deja de borrar apps para liberar espacio",
+  "description_es": "Tu iPhone o Android puede quitar una app sin borrar tus datos, así liberas espacio sin perder nada. En iPhone se llama descargar app y en Android, archivar.\n\n#shorts #iphone #trucostecnologicos",
+  "tags_es": [
+    "liberar espacio celular",
+    "almacenamiento lleno",
+    "descargar app iphone",
+    "archivar apps android",
+    "trucos iphone",
+    "trucos android",
+    "borrar apps sin perder datos",
+    "consejos celular"
+  ],
+  "segments": [
+    {
+      "narration": "Deleting apps to free up space is usually a mistake, because you throw away everything saved inside them.",
+      "narration_es": "Si borras apps para liberar espacio, casi siempre te equivocas, porque pierdes todo lo que tenías guardado en ellas.",
+      "visual_queries": [
+        "deleting app smartphone",
+        "phone storage full",
+        "smartphone screen"
+      ]
+    },
+    {
+      "narration": "Both iPhone and Android can remove an app but keep its data.",
+      "narration_es": "Tanto el iPhone como Android pueden quitar una app y aun así conservar tus datos.",
+      "visual_queries": [
+        "two smartphones table",
+        "smartphone apps screen",
+        "smartphone hand"
+      ]
+    },
+    {
+      "narration": "On iPhone, open Settings, then General, then iPhone Storage. Tap an app and choose Offload App.",
+      "narration_es": "En iPhone, abre Ajustes, luego General y después Almacenamiento del iPhone. Toca una app y elige Descargar app.",
+      "visual_queries": [
+        "iphone settings scrolling",
+        "scrolling phone settings",
+        "person using iphone"
+      ]
+    },
+    {
+      "narration": "The app disappears, but your documents and settings stay on the phone.",
+      "narration_es": "La app se va, pero tus documentos y tu configuración se quedan en el teléfono.",
+      "visual_queries": [
+        "phone home screen apps",
+        "smartphone apps closeup",
+        "smartphone screen"
+      ]
+    },
+    {
+      "narration": "On Android, open your app store settings and turn on automatic app archiving. Some newer phones also show an Archive button on the app's info page.",
+      "narration_es": "En Android, entra a la configuración de tu tienda de apps y activa el archivado automático. Algunos teléfonos nuevos también tienen un botón de Archivar en la información de la app.",
+      "visual_queries": [
+        "android phone settings",
+        "android smartphone hand",
+        "using smartphone closeup"
+      ]
+    },
+    {
+      "narration": "The icon stays on your home screen with a little cloud. Tap it, and the app comes back exactly how you left it.",
+      "narration_es": "El ícono se queda en tu pantalla con una nubecita. Lo tocas y la app regresa tal como la dejaste.",
+      "visual_queries": [
+        "tapping phone app icon",
+        "finger tapping smartphone",
+        "smartphone home screen"
+      ]
+    },
+    {
+      "narration": "So next time your storage is full, shrink the app instead of losing what's inside it.",
+      "narration_es": "Así que la próxima vez que se te llene el celular, no borres la app. Mejor achícala y no pierdas nada.",
+      "visual_queries": [
+        "phone storage notification",
+        "person looking at phone",
+        "smartphone in hand"
+      ]
+    }
+  ]
+}
