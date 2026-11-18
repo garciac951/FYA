@@ -1,0 +1,92 @@
+{
+  "topic_id": "mechanics",
+  "title": "Why Your Torque Wrench Might Be Lying to You",
+  "description": "A click-type torque wrench stored cranked up slowly loses accuracy. Turn it down to the lowest setting after every job, and never use it to loosen stuck bolts.\n\n#mechanic #cartips #shorts",
+  "tags": [
+    "torque wrench tips",
+    "how to store torque wrench",
+    "click torque wrench",
+    "torque wrench calibration",
+    "diy car repair",
+    "mechanic tool tips",
+    "lug nut torque",
+    "garage tools"
+  ],
+  "title_es": "Tu torquímetro podría estar mintiéndote",
+  "description_es": "Un torquímetro de clic guardado con tensión pierde precisión con el tiempo. Bájalo al número más bajo después de cada uso y nunca lo uses para aflojar tornillos pegados.\n\n#mecanica #tipsdeautos #shorts",
+  "tags_es": [
+    "torquímetro",
+    "llave de torque",
+    "cómo guardar torquímetro",
+    "calibración torquímetro",
+    "mecánica automotriz",
+    "herramientas de taller",
+    "consejos de mecánica",
+    "reparar tu carro"
+  ],
+  "segments": [
+    {
+      "narration": "That torque wrench in your toolbox might be lying to you.",
+      "narration_es": "Ese torquímetro que tienes en tu caja de herramientas podría estar mintiéndote.",
+      "visual_queries": [
+        "torque wrench closeup",
+        "mechanic toolbox",
+        "garage tools"
+      ]
+    },
+    {
+      "narration": "A click-type torque wrench uses a spring inside the handle. Setting it squeezes that spring.",
+      "narration_es": "Un torquímetro de clic trae un resorte dentro del mango. Cuando lo ajustas, ese resorte se comprime.",
+      "visual_queries": [
+        "adjusting torque wrench",
+        "coiled metal spring",
+        "wrench handle closeup"
+      ]
+    },
+    {
+      "narration": "Leave it cranked up in a drawer for months, and that spring slowly weakens.",
+      "narration_es": "Si lo dejas apretado en un cajón por meses, ese resorte se va debilitando poco a poco.",
+      "visual_queries": [
+        "tool drawer wrenches",
+        "toolbox drawer",
+        "workshop tools"
+      ]
+    },
+    {
+      "narration": "Now it clicks early, and your lug nuts or spark plugs end up under-tightened without you knowing.",
+      "narration_es": "Entonces hace clic antes de tiempo, y tus birlos o bujías quedan flojos sin que te des cuenta.",
+      "visual_queries": [
+        "tightening lug nuts",
+        "car wheel removal",
+        "mechanic changing tire"
+      ]
+    },
+    {
+      "narration": "After every job, turn the handle down to the lowest number on the scale, not below it.",
+      "narration_es": "Después de cada trabajo, regrésalo al número más bajo de la escala, pero no por debajo.",
+      "visual_queries": [
+        "torque wrench scale",
+        "wrench handle closeup",
+        "mechanic hands tools"
+      ]
+    },
+    {
+      "narration": "And never use it to break loose stuck bolts. That shock throws off its calibration too.",
+      "narration_es": "Y nunca lo uses para aflojar tornillos pegados. Ese golpe también le descalibra la medida.",
+      "visual_queries": [
+        "breaker bar rusty bolt",
+        "loosening bolt wrench",
+        "mechanic engine repair"
+      ]
+    },
+    {
+      "narration": "Treat it like a measuring tool, not a wrench, and it'll stay honest.",
+      "narration_es": "Trátalo como instrumento de medición, no como llave cualquiera, y nunca te va a mentir.",
+      "visual_queries": [
+        "torque wrench case",
+        "organized tool wall",
+        "garage workbench"
+      ]
+    }
+  ]
+}

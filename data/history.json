@@ -384,6 +384,25 @@
           "file": "output/20261117-2259-stop-deleting-apps-to-free-up-space/short-es.mp4"
         }
       }
+    },
+    {
+      "date": "2026-11-18T22:56:40+00:00",
+      "topic": "mechanics",
+      "title": "Why Your Torque Wrench Might Be Lying to You",
+      "idea": null,
+      "run": "24",
+      "redo_of": null,
+      "upload_mode": "none",
+      "versions": {
+        "en": {
+          "title": "Why Your Torque Wrench Might Be Lying to You",
+          "file": "output/20261118-2256-why-your-torque-wrench-might-be-lying-to-you/short-en.mp4"
+        },
+        "es": {
+          "title": "Tu torquímetro podría estar mintiéndote",
+          "file": "output/20261118-2256-why-your-torque-wrench-might-be-lying-to-you/short-es.mp4"
+        }
+      }
     }
   ]
 }
