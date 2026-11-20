@@ -1,0 +1,92 @@
+{
+  "topic_id": "fly-fishing",
+  "title": "The Fly Fishing Mistake That Makes Trout Ignore You",
+  "description": "Even the perfect fly gets refused if your line drags it faster than the current. Learn to spot drag and fix it with a simple mend.\n\n#flyfishing #fishing #shorts",
+  "tags": [
+    "fly fishing for beginners",
+    "fly fishing mistakes",
+    "how to mend fly line",
+    "dry fly drag",
+    "trout fishing tips",
+    "dead drift",
+    "fly fishing tips",
+    "why trout refuse my fly"
+  ],
+  "title_es": "El error que hace que la trucha ignore tu mosca",
+  "description_es": "Aunque tu mosca sea perfecta, la trucha la rechaza si la línea la arrastra más rápido que la corriente. Aprende a detectar el arrastre y corregirlo con un mend.\n\n#pescaconmosca #pesca #shorts",
+  "tags_es": [
+    "pesca con mosca para principiantes",
+    "errores pesca con mosca",
+    "como hacer mend",
+    "arrastre de la mosca",
+    "pesca de trucha",
+    "consejos pesca con mosca",
+    "deriva natural",
+    "por que la trucha no pica"
+  ],
+  "segments": [
+    {
+      "narration": "Your fly can be a perfect match, and trout will still ignore it if it moves wrong.",
+      "narration_es": "Tu mosca puede ser idéntica a lo que comen, y aun así la trucha la va a ignorar si se mueve mal.",
+      "visual_queries": [
+        "dry fly floating water",
+        "fly fishing trout",
+        "fly fishing river"
+      ]
+    },
+    {
+      "narration": "A river doesn't flow at one speed, and your line usually lies across faster water than your fly.",
+      "narration_es": "Un río no corre a una sola velocidad, y casi siempre tu línea queda sobre agua más rápida que tu mosca.",
+      "visual_queries": [
+        "river current riffles",
+        "fast flowing stream",
+        "mountain river"
+      ]
+    },
+    {
+      "narration": "The fast current pulls the line, which drags the fly sideways. Anglers call it drag.",
+      "narration_es": "La corriente rápida jala la línea, y la línea arrastra la mosca de lado. A eso se le llama arrastre.",
+      "visual_queries": [
+        "fly line on water",
+        "fly fishing line",
+        "angler in river"
+      ]
+    },
+    {
+      "narration": "Real bugs drift at exactly the speed of the water under them, so trout reject the fake.",
+      "narration_es": "Un insecto de verdad flota justo a la velocidad del agua que tiene debajo, así que la trucha descubre el engaño.",
+      "visual_queries": [
+        "mayfly on water",
+        "insect floating water",
+        "trout underwater"
+      ]
+    },
+    {
+      "narration": "Look for a tiny V-shaped wake behind your fly. That ripple means drag.",
+      "narration_es": "Fíjate si se forma una estelita en forma de V detrás de la mosca. Esa ondita significa arrastre.",
+      "visual_queries": [
+        "wake on water surface",
+        "ripples on water",
+        "calm river surface"
+      ]
+    },
+    {
+      "narration": "The fix is a mend. After the cast, flip the belly of your line upstream with your rod tip.",
+      "narration_es": "La solución se llama mend. Después de lanzar, voltea la curva de tu línea río arriba con la punta de la caña.",
+      "visual_queries": [
+        "fly fishing casting",
+        "fly rod casting river",
+        "fly fishing"
+      ]
+    },
+    {
+      "narration": "Repeat it as the fly drifts. Match the speed, not just the bug.",
+      "narration_es": "Repítelo mientras la mosca va bajando. No basta con imitar el bicho, también tienes que imitar su velocidad.",
+      "visual_queries": [
+        "trout caught net",
+        "fly fisherman river",
+        "river sunset fishing"
+      ]
+    }
+  ]
+}

@@ -403,6 +403,29 @@
           "file": "output/20261118-2256-why-your-torque-wrench-might-be-lying-to-you/short-es.mp4"
         }
       }
+    },
+    {
+      "date": "2026-11-20T02:10:05+00:00",
+      "topic": "fly-fishing",
+      "title": "The Fly Fishing Mistake That Makes Trout Ignore You",
+      "idea": null,
+      "run": "26",
+      "redo_of": null,
+      "upload_mode": "private",
+      "versions": {
+        "en": {
+          "title": "The Fly Fishing Mistake That Makes Trout Ignore You",
+          "file": "output/20261120-0209-the-fly-fishing-mistake-that-makes-trout-ignore-yo/short-en.mp4",
+          "youtube_id": "cxTPWSXyfB4",
+          "url": "https://youtube.com/shorts/cxTPWSXyfB4"
+        },
+        "es": {
+          "title": "El error que hace que la trucha ignore tu mosca",
+          "file": "output/20261120-0209-the-fly-fishing-mistake-that-makes-trout-ignore-yo/short-es.mp4",
+          "youtube_id": "YxM4-KodOlo",
+          "url": "https://youtube.com/shorts/YxM4-KodOlo"
+        }
+      }
     }
   ]
 }
