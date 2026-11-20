@@ -1,0 +1,92 @@
+{
+  "topic_id": "basketball",
+  "title": "The NBA Game That Ended 19 to 18",
+  "description": "In 1950, one team refused to shoot, and the result was the lowest-scoring game in NBA history. Here's how that boring night gave us the twenty-four second shot clock.\n\n#basketball #nba #shorts",
+  "tags": [
+    "nba history",
+    "lowest scoring nba game",
+    "shot clock history",
+    "why 24 second shot clock",
+    "basketball facts",
+    "nba records",
+    "basketball trivia",
+    "old school basketball"
+  ],
+  "title_es": "El partido de la NBA que terminó 19 a 18",
+  "description_es": "En 1950, un equipo se negó a tirar y así nació el partido con menos puntos en la historia de la NBA. Te contamos cómo esa noche aburrida creó el reloj de veinticuatro segundos.\n\n#baloncesto #nba #shorts",
+  "tags_es": [
+    "historia de la nba",
+    "partido con menos puntos nba",
+    "reloj de tiro",
+    "por qué 24 segundos",
+    "datos de baloncesto",
+    "récords nba",
+    "curiosidades del básquetbol",
+    "básquetbol"
+  ],
+  "segments": [
+    {
+      "narration": "The lowest scoring game in NBA history ended nineteen to eighteen.",
+      "narration_es": "El partido con menos puntos en la historia de la NBA terminó diecinueve a dieciocho.",
+      "visual_queries": [
+        "basketball scoreboard arena",
+        "empty basketball court",
+        "basketball game"
+      ]
+    },
+    {
+      "narration": "In nineteen fifty, the Fort Wayne Pistons played the mighty Minneapolis Lakers.",
+      "narration_es": "Fue en mil novecientos cincuenta, cuando los Pistons de Fort Wayne se enfrentaron a los poderosos Lakers de Minneapolis.",
+      "visual_queries": [
+        "vintage basketball game",
+        "old basketball",
+        "basketball players court"
+      ]
+    },
+    {
+      "narration": "Fort Wayne couldn't match their size, so they just held the ball and refused to shoot.",
+      "narration_es": "Fort Wayne no podía competir con su tamaño, así que simplemente se quedaron con el balón y se negaron a tirar.",
+      "visual_queries": [
+        "player holding basketball",
+        "basketball dribbling slow",
+        "basketball player"
+      ]
+    },
+    {
+      "narration": "Fans booed, and the league had a problem.",
+      "narration_es": "La gente abucheó, y la liga se dio cuenta de que tenía un problema.",
+      "visual_queries": [
+        "crowd booing stadium",
+        "bored crowd arena",
+        "sports crowd"
+      ]
+    },
+    {
+      "narration": "The fix arrived in nineteen fifty-four: the shot clock. And twenty-four wasn't random.",
+      "narration_es": "La solución llegó en mil novecientos cincuenta y cuatro: el reloj de tiro. Y el veinticuatro no salió de la nada.",
+      "visual_queries": [
+        "basketball shot clock",
+        "countdown timer clock",
+        "basketball hoop"
+      ]
+    },
+    {
+      "narration": "A game has two thousand eight hundred eighty seconds. Divide that by about one hundred twenty shots, the pace of an exciting game, and you get twenty-four seconds.",
+      "narration_es": "Un partido dura dos mil ochocientos ochenta segundos. Divídelos entre unos ciento veinte tiros, el ritmo de un partido emocionante, y te da veinticuatro segundos.",
+      "visual_queries": [
+        "basketball shot swish",
+        "basketball fast break",
+        "basketball shooting"
+      ]
+    },
+    {
+      "narration": "So every shot clock buzzer exists because of one painfully boring night.",
+      "narration_es": "Así que cada vez que suena el reloj de tiro, es gracias a una noche tremendamente aburrida.",
+      "visual_queries": [
+        "basketball buzzer beater",
+        "basketball arena lights",
+        "basketball net"
+      ]
+    }
+  ]
+}
