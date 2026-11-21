@@ -445,6 +445,25 @@
           "file": "output/20261120-2231-the-nba-game-that-ended-19-to-18/short-es.mp4"
         }
       }
+    },
+    {
+      "date": "2026-11-21T20:57:09+00:00",
+      "topic": "mechanics",
+      "title": "The Socket Mistake That Rounds Off Bolts",
+      "idea": null,
+      "run": "28",
+      "redo_of": null,
+      "upload_mode": "none",
+      "versions": {
+        "en": {
+          "title": "The Socket Mistake That Rounds Off Bolts",
+          "file": "output/20261121-2056-the-socket-mistake-that-rounds-off-bolts/short-en.mp4"
+        },
+        "es": {
+          "title": "El error con el dado que te barre los tornillos",
+          "file": "output/20261121-2056-the-socket-mistake-that-rounds-off-bolts/short-es.mp4"
+        }
+      }
     }
   ]
 }

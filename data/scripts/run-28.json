@@ -1,0 +1,83 @@
+{
+  "topic_id": "mechanics",
+  "title": "The Socket Mistake That Rounds Off Bolts",
+  "description": "Twelve-point sockets grip closer to a bolt's corners, so tight or rusty bolts round off more easily. A six-point socket grips the flat sides and spreads the force over more metal.\n\n#mechanic #cartips #diy #shorts",
+  "tags": [
+    "six point vs twelve point socket",
+    "rounded bolt",
+    "how to avoid stripping bolts",
+    "socket set tips",
+    "diy car repair",
+    "mechanic tool tips",
+    "rusty bolt removal",
+    "beginner mechanic tips"
+  ],
+  "title_es": "El error con el dado que te barre los tornillos",
+  "description_es": "Los dados de doce puntas agarran más cerca de las esquinas del tornillo, y por eso uno apretado u oxidado se barre fácil. El de seis puntas agarra las caras planas y reparte mejor la fuerza.\n\n#mecanica #tipsdeautos #shorts",
+  "tags_es": [
+    "dado de seis puntas",
+    "dado de doce puntas",
+    "tornillo barrido",
+    "como no barrer un tornillo",
+    "herramientas de mecanico",
+    "mecanica automotriz",
+    "tornillo oxidado",
+    "reparar tu carro"
+  ],
+  "segments": [
+    {
+      "narration": "That rounded-off bolt might not be the bolt's fault. It might be the socket you grabbed.",
+      "narration_es": "Ese tornillo que se te barrió quizá no tuvo la culpa. A lo mejor fue el dado que agarraste.",
+      "visual_queries": [
+        "rounded bolt head",
+        "rusty bolt closeup",
+        "mechanic wrench engine"
+      ]
+    },
+    {
+      "narration": "Look inside your socket. Twelve points means it was built for convenience, not grip.",
+      "narration_es": "Fíjate por dentro del dado. Si tiene doce puntas, está hecho para la comodidad, no para agarrar fuerte.",
+      "visual_queries": [
+        "socket set closeup",
+        "wrench socket set",
+        "mechanic tools"
+      ]
+    },
+    {
+      "narration": "A twelve-point socket fits onto a bolt every thirty degrees, which is handy in tight spaces. But it pushes closer to the corners of the bolt head.",
+      "narration_es": "El de doce puntas entra en el tornillo cada treinta grados, y eso ayuda en espacios apretados. Pero empuja más cerca de las esquinas de la cabeza.",
+      "visual_queries": [
+        "ratchet engine bay",
+        "ratchet wrench bolt",
+        "car engine repair"
+      ]
+    },
+    {
+      "narration": "A six-point socket grips the flat sides instead, spreading the force over more metal.",
+      "narration_es": "El de seis puntas, en cambio, agarra las caras planas y reparte la fuerza en más metal.",
+      "visual_queries": [
+        "socket on bolt",
+        "hex bolt closeup",
+        "nuts and bolts"
+      ]
+    },
+    {
+      "narration": "On a tight, rusty or overtightened bolt, that difference decides whether it breaks loose or turns into a smooth little circle.",
+      "narration_es": "Con un tornillo apretado u oxidado, esa diferencia decide si se afloja o si termina convertido en un circulito liso.",
+      "visual_queries": [
+        "loosening rusty bolt",
+        "mechanic breaker bar",
+        "mechanic working car"
+      ]
+    },
+    {
+      "narration": "So keep the twelve-points for easy jobs and awkward angles. When a bolt fights back, bring six points.",
+      "narration_es": "Así que deja el de doce puntas para trabajos fáciles y ángulos difíciles. Cuando el tornillo se ponga terco, saca el de seis.",
+      "visual_queries": [
+        "mechanic toolbox drawer",
+        "socket wrench set",
+        "garage tools"
+      ]
+    }
+  ]
+}
