@@ -464,6 +464,25 @@
           "file": "output/20261121-2056-the-socket-mistake-that-rounds-off-bolts/short-es.mp4"
         }
       }
+    },
+    {
+      "date": "2026-11-22T21:07:27+00:00",
+      "topic": "bermuda-grass-texas",
+      "title": "Once-a-Week Watering? Your Bermuda Can Handle It",
+      "idea": null,
+      "run": "29",
+      "redo_of": null,
+      "upload_mode": "none",
+      "versions": {
+        "en": {
+          "title": "Once-a-Week Watering? Your Bermuda Can Handle It",
+          "file": "output/20261122-2107-once-a-week-watering-your-bermuda-can-handle-it/short-en.mp4"
+        },
+        "es": {
+          "title": "¿Riego una vez por semana? Tu Bermuda aguanta",
+          "file": "output/20261122-2107-once-a-week-watering-your-bermuda-can-handle-it/short-es.mp4"
+        }
+      }
     }
   ]
 }

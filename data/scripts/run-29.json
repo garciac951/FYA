@@ -1,0 +1,91 @@
+{
+  "topic_id": "bermuda-grass-texas",
+  "title": "Once-a-Week Watering? Your Bermuda Can Handle It",
+  "description": "Water restrictions don't have to kill your Bermuda lawn. One deep inch a week, split into short cycles on Texas clay, keeps roots deep and grass alive through the heat.\n\n#lawncare #bermudagrass #shorts",
+  "tags": [
+    "bermuda grass watering",
+    "texas lawn watering",
+    "water restrictions lawn",
+    "how much to water bermuda",
+    "deep watering lawn",
+    "tuna can sprinkler test",
+    "texas summer lawn care",
+    "bermuda grass dormant"
+  ],
+  "title_es": "¿Riego una vez por semana? Tu Bermuda aguanta",
+  "description_es": "Las restricciones de agua no tienen que acabar con tu pasto Bermuda. Una pulgada profunda por semana, en ciclos cortos sobre el barro de Texas, lo mantiene vivo en pleno calor.\n\n#cuidadodelcesped #pastobermuda #shorts",
+  "tags_es": [
+    "regar pasto bermuda",
+    "riego de cesped en texas",
+    "restricciones de agua jardin",
+    "cuanta agua necesita el pasto",
+    "riego profundo cesped",
+    "pasto bermuda en verano",
+    "cesped seco texas"
+  ],
+  "segments": [
+    {
+      "narration": "Your city only lets you water once a week, and your Bermuda grass is fine with that.",
+      "narration_es": "Tu ciudad solo te deja regar una vez por semana, y a tu pasto Bermuda eso no le molesta.",
+      "visual_queries": [
+        "lawn sprinkler watering",
+        "sprinkler green grass",
+        "green lawn sunny"
+      ]
+    },
+    {
+      "narration": "In summer, Bermuda needs about one inch of water per week, and it prefers it all at once.",
+      "narration_es": "En verano, el Bermuda necesita como una pulgada de agua por semana, y la prefiere toda de un jalón.",
+      "visual_queries": [
+        "sprinkler spraying lawn",
+        "water droplets grass",
+        "green grass closeup"
+      ]
+    },
+    {
+      "narration": "Deep soaks push roots down six inches or more, where the soil stays cooler.",
+      "narration_es": "Un riego profundo hace que las raíces bajen seis pulgadas o más, donde la tierra está más fresca.",
+      "visual_queries": [
+        "grass roots soil",
+        "grass sod roots",
+        "soil closeup"
+      ]
+    },
+    {
+      "narration": "To find your run time, set empty tuna cans on the lawn and time how long they take to fill an inch.",
+      "narration_es": "Para saber cuánto tiempo regar, pon unas latas de atún vacías en el pasto y mide cuánto tardan en llenarse una pulgada.",
+      "visual_queries": [
+        "empty can grass",
+        "measuring rain water",
+        "stopwatch timer"
+      ]
+    },
+    {
+      "narration": "Texas clay sheds water fast, so split that time into two or three short cycles before ten in the morning.",
+      "narration_es": "El barro de Texas no absorbe rápido, así que divide ese tiempo en dos o tres ciclos cortos antes de las diez de la mañana.",
+      "visual_queries": [
+        "water runoff sidewalk",
+        "morning sprinkler lawn",
+        "sunrise lawn"
+      ]
+    },
+    {
+      "narration": "If a drought ban hits, Bermuda turns brown and goes dormant. It isn't dead, and it greens back up when rain returns.",
+      "narration_es": "Si prohíben regar por la sequía, el Bermuda se pone café y se duerme. No está muerto, y reverdece cuando regresa la lluvia.",
+      "visual_queries": [
+        "dry brown lawn",
+        "drought dry grass",
+        "rain falling grass"
+      ]
+    },
+    {
+      "narration": "Once a week was never the problem. Shallow watering was.",
+      "narration_es": "El problema nunca fue regar una vez por semana. El problema era regar poquito.",
+      "visual_queries": [
+        "lush green lawn",
+        "healthy green grass",
+        "green lawn yard"
+      ]
+    }
+  ]
+}
