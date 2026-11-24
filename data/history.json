@@ -483,6 +483,25 @@
           "file": "output/20261122-2107-once-a-week-watering-your-bermuda-can-handle-it/short-es.mp4"
         }
       }
+    },
+    {
+      "date": "2026-11-24T02:20:00+00:00",
+      "topic": "java-coding",
+      "title": "One Line of Java That Replaces Forty",
+      "idea": null,
+      "run": "30",
+      "redo_of": null,
+      "upload_mode": "none",
+      "versions": {
+        "en": {
+          "title": "One Line of Java That Replaces Forty",
+          "file": "output/20261124-0219-one-line-of-java-that-replaces-forty/short-en.mp4"
+        },
+        "es": {
+          "title": "Una línea de Java que reemplaza cuarenta",
+          "file": "output/20261124-0219-one-line-of-java-that-replaces-forty/short-es.mp4"
+        }
+      }
     }
   ]
 }

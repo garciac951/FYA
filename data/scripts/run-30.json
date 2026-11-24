@@ -1,0 +1,101 @@
+{
+  "topic_id": "java-coding",
+  "title": "One Line of Java That Replaces Forty",
+  "description": "Java records, final since Java 16, generate the constructor, accessors, equals, hashCode and toString for you, and make your data immutable by default.\n\n#java #coding #shorts",
+  "tags": [
+    "java records",
+    "java 16",
+    "modern java",
+    "java tutorial",
+    "java data class",
+    "java boilerplate",
+    "learn java",
+    "java tips"
+  ],
+  "title_es": "Una línea de Java que reemplaza cuarenta",
+  "description_es": "Los records de Java, estables desde Java 16, generan el constructor, los accesores, equals, hashCode y toString por ti, y hacen tus datos inmutables.\n\n#java #programacion #shorts",
+  "tags_es": [
+    "records en java",
+    "java 16",
+    "java moderno",
+    "tutorial de java",
+    "aprender java",
+    "programación java",
+    "clases de datos java",
+    "tips de java"
+  ],
+  "segments": [
+    {
+      "narration": "You're probably writing forty lines of Java for something that needs exactly one.",
+      "narration_es": "Seguro estás escribiendo cuarenta líneas de Java para algo que necesita solo una.",
+      "visual_queries": [
+        "scrolling code screen",
+        "programmer typing code",
+        "computer code"
+      ]
+    },
+    {
+      "narration": "A plain data class needs fields, a constructor, getters, and a pile of boilerplate for comparing and printing.",
+      "narration_es": "Una clase de datos sencilla pide campos, un constructor, getters y un montón de código repetido para comparar e imprimir.",
+      "visual_queries": [
+        "long code monitor",
+        "developer frustrated laptop",
+        "programming screen"
+      ]
+    },
+    {
+      "narration": "Since Java sixteen, records do all of that for you. Just write record Point, with int x and int y in parentheses, and you're done.",
+      "narration_es": "Desde Java dieciséis, los records hacen todo eso por ti. Escribes record Point, con int x e int y entre paréntesis, y listo.",
+      "visual_queries": [
+        "typing code closeup",
+        "hands keyboard coding",
+        "laptop code"
+      ]
+    },
+    {
+      "narration": "The compiler quietly generates the constructor, the accessors, equals, hashCode, and a readable toString.",
+      "narration_es": "El compilador te genera solito el constructor, los accesores, equals, hashCode y un toString que sí se puede leer.",
+      "visual_queries": [
+        "code compiling terminal",
+        "terminal screen text",
+        "computer screen code"
+      ]
+    },
+    {
+      "narration": "One detail trips people up. The accessors are called x and y, not get x and get y.",
+      "narration_es": "Hay un detalle que confunde a muchos. Los accesores se llaman x y y, no get x ni get y.",
+      "visual_queries": [
+        "programmer thinking screen",
+        "developer reading code",
+        "coding desk"
+      ]
+    },
+    {
+      "narration": "Records are also immutable. Every field is final, so nobody can change your data after it's created.",
+      "narration_es": "Además, los records son inmutables. Todos los campos son final, así que nadie puede cambiar tus datos después de crearlos.",
+      "visual_queries": [
+        "padlock closeup",
+        "locked padlock",
+        "security lock"
+      ]
+    },
+    {
+      "narration": "Need validation? Add a compact constructor and check the values right inside it.",
+      "narration_es": "¿Necesitas validar algo? Agrega un constructor compacto y revisa los valores ahí mismo.",
+      "visual_queries": [
+        "checklist checkmark",
+        "code review screen",
+        "programmer laptop"
+      ]
+    },
+    {
+      "narration": "One line instead of forty. That's the power of a record.",
+      "narration_es": "Una línea en lugar de cuarenta. Ese es el poder de un record.",
+      "visual_queries": [
+        "developer smiling laptop",
+        "programmer working night",
+        "coding laptop"
+      ]
+    }
+  ]
+}
