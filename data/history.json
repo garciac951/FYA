@@ -502,6 +502,29 @@
           "file": "output/20261124-0219-one-line-of-java-that-replaces-forty/short-es.mp4"
         }
       }
+    },
+    {
+      "date": "2026-11-24T04:47:32+00:00",
+      "topic": "football",
+      "title": "The Longhorns Hand Sign Started at a Pep Rally",
+      "idea": null,
+      "run": "31",
+      "redo_of": null,
+      "upload_mode": "public",
+      "versions": {
+        "en": {
+          "title": "The Longhorns Hand Sign Started at a Pep Rally",
+          "file": "output/20261124-0447-the-longhorns-hand-sign-started-at-a-pep-rally/short-en.mp4",
+          "youtube_id": "4NSebuoC2-c",
+          "url": "https://youtube.com/shorts/4NSebuoC2-c"
+        },
+        "es": {
+          "title": "La seña de los Longhorns nació en un mitin",
+          "file": "output/20261124-0447-the-longhorns-hand-sign-started-at-a-pep-rally/short-es.mp4",
+          "youtube_id": "ArsmUI1s8do",
+          "url": "https://youtube.com/shorts/ArsmUI1s8do"
+        }
+      }
     }
   ]
 }

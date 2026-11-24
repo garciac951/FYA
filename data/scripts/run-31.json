@@ -1,0 +1,90 @@
+{
+  "topic_id": "football",
+  "title": "The Longhorns Hand Sign Started at a Pep Rally",
+  "description": "In 1955, a University of Texas cheerleader taught students a new hand sign at a pep rally. Texas lost the next day, but Hook 'em Horns became one of the most famous gestures in sports.\n\n#football #collegefootball #shorts",
+  "tags": [
+    "hook em horns history",
+    "texas longhorns",
+    "college football traditions",
+    "texas football lore",
+    "longhorns hand sign",
+    "college football history",
+    "texas vs tcu"
+  ],
+  "title_es": "La seña de los Longhorns nació en un mitin",
+  "description_es": "En 1955, un porrista de la Universidad de Texas enseñó una nueva seña con la mano en un mitin. Texas perdió al día siguiente, pero Hook 'em Horns se volvió un gesto famoso en todo el deporte.\n\n#futbolamericano #texas #shorts",
+  "tags_es": [
+    "hook em horns historia",
+    "longhorns de texas",
+    "tradiciones futbol americano",
+    "futbol americano universitario",
+    "historia del futbol americano",
+    "seña de los longhorns",
+    "texas contra tcu"
+  ],
+  "segments": [
+    {
+      "narration": "The most famous hand sign in college football was invented by a cheerleader the night before a game.",
+      "narration_es": "La seña con la mano más famosa del fútbol americano universitario la inventó un porrista la noche antes de un partido.",
+      "visual_queries": [
+        "rock hand gesture",
+        "football fans cheering",
+        "college football stadium"
+      ]
+    },
+    {
+      "narration": "In November of nineteen fifty-five, University of Texas head cheerleader Harley Clark stood up at a pep rally with a new idea.",
+      "narration_es": "En noviembre de mil novecientos cincuenta y cinco, Harley Clark, jefe de porristas de la Universidad de Texas, se paró en un mitin escolar con una idea nueva.",
+      "visual_queries": [
+        "pep rally gym",
+        "cheerleaders crowd",
+        "university campus"
+      ]
+    },
+    {
+      "narration": "A friend named Henry Pitts had shown him a hand shadow that looked like the head of a longhorn steer.",
+      "narration_es": "Un amigo, Henry Pitts, le había enseñado una sombra hecha con la mano que parecía la cabeza de un toro longhorn.",
+      "visual_queries": [
+        "hand shadow puppet",
+        "longhorn steer head",
+        "longhorn cattle"
+      ]
+    },
+    {
+      "narration": "You raise your index finger and your pinky, and you tuck the middle two under your thumb.",
+      "narration_es": "Levantas el dedo índice y el meñique, y doblas los dos de en medio debajo del pulgar.",
+      "visual_queries": [
+        "hand horns gesture",
+        "hand gesture closeup",
+        "raised hand"
+      ]
+    },
+    {
+      "narration": "Clark asked the students to flash it together, and he called it Hook 'em Horns.",
+      "narration_es": "Clark les pidió a los estudiantes que la hicieran todos juntos, y la bautizó como Hook 'em Horns.",
+      "visual_queries": [
+        "crowd raising hands",
+        "students cheering",
+        "stadium crowd"
+      ]
+    },
+    {
+      "narration": "The next day, Texas played TCU, and the sign spread through the stands.",
+      "narration_es": "Al día siguiente, Texas jugó contra TCU, y la seña se regó por todas las gradas.",
+      "visual_queries": [
+        "football game stands",
+        "american football game",
+        "football stadium"
+      ]
+    },
+    {
+      "narration": "Texas lost that game forty-seven to twenty. The sign won anyway, and seventy years later, it's still everywhere.",
+      "narration_es": "Texas perdió ese partido cuarenta y siete a veinte. Pero la seña ganó de todos modos, y setenta años después, la ves por todos lados.",
+      "visual_queries": [
+        "football scoreboard night",
+        "stadium lights night",
+        "football field night"
+      ]
+    }
+  ]
+}
