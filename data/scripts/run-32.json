@@ -1,0 +1,100 @@
+{
+  "topic_id": "dogs",
+  "title": "The 7-Second Test That Protects Your Dog's Paws",
+  "description": "On a mild 77 degree day, asphalt can reach 125 degrees, hot enough to burn paw pads. Use the seven-second hand test before every summer walk.\n\n#dogs #doglover #shorts",
+  "tags": [
+    "dog paw burns",
+    "hot pavement dogs",
+    "summer dog walking",
+    "dog heat safety",
+    "seven second rule dogs",
+    "dog paw care",
+    "walking dog in heat",
+    "dog safety tips"
+  ],
+  "title_es": "La prueba de 7 segundos que cuida las patas de tu perro",
+  "description_es": "En un día de apenas 25 grados, el asfalto puede llegar a 52 y quemar las almohadillas de tu perro. Haz la prueba de los siete segundos antes de cada paseo.\n\n#perros #amantesdelosperros #shorts",
+  "tags_es": [
+    "quemaduras en patas de perro",
+    "asfalto caliente perros",
+    "pasear perro en verano",
+    "seguridad del perro en calor",
+    "regla de los siete segundos",
+    "cuidado de patas de perro",
+    "consejos para perros"
+  ],
+  "segments": [
+    {
+      "narration": "On a seventy-seven degree day, the asphalt under your dog's paws can hit one hundred twenty-five degrees.",
+      "narration_es": "En un día de apenas veinticinco grados, el asfalto bajo las patas de tu perro puede llegar a cincuenta y dos.",
+      "visual_queries": [
+        "dog paws asphalt",
+        "dog walking street",
+        "dog walk summer"
+      ]
+    },
+    {
+      "narration": "That's hot enough to burn paw pads in about a minute.",
+      "narration_es": "Eso basta para quemarle las almohadillas en más o menos un minuto.",
+      "visual_queries": [
+        "dog paw pads closeup",
+        "dog paw",
+        "dog feet"
+      ]
+    },
+    {
+      "narration": "The air feels nice to you because you're wearing shoes.",
+      "narration_es": "A ti el clima te parece agradable porque traes zapatos.",
+      "visual_queries": [
+        "sneakers walking sidewalk",
+        "feet walking pavement",
+        "person walking dog"
+      ]
+    },
+    {
+      "narration": "Your dog is barefoot, right on the surface soaking up the sun.",
+      "narration_es": "Pero tu perro va descalzo, pegado a una superficie que lleva horas absorbiendo el sol.",
+      "visual_queries": [
+        "dog sidewalk sunny",
+        "sun hot pavement",
+        "dog outdoors sun"
+      ]
+    },
+    {
+      "narration": "Here's the test. Press the back of your hand on the pavement for seven seconds. If you can't hold it, it's too hot for paws.",
+      "narration_es": "La prueba es sencilla. Pon el dorso de tu mano sobre el pavimento durante siete segundos. Si no aguantas, está demasiado caliente para sus patas.",
+      "visual_queries": [
+        "hand touching pavement",
+        "hand on asphalt",
+        "asphalt road closeup"
+      ]
+    },
+    {
+      "narration": "On those days, walk early in the morning or after sunset, and stick to grass or shaded paths.",
+      "narration_es": "Esos días, sácalo temprano en la mañana o después de que se meta el sol, y busca pasto o caminos con sombra.",
+      "visual_queries": [
+        "dog walking grass morning",
+        "dog park shade",
+        "dog walk sunset"
+      ]
+    },
+    {
+      "narration": "If you notice limping, blisters, or red pads after a walk, call your vet.",
+      "narration_es": "Si después del paseo lo ves cojeando, con ampollas o con las almohadillas rojas, llévalo al veterinario.",
+      "visual_queries": [
+        "veterinarian examining dog paw",
+        "vet checking dog",
+        "veterinarian dog"
+      ]
+    },
+    {
+      "narration": "Seven seconds with your hand can save weeks of sore paws.",
+      "narration_es": "Siete segundos con tu mano pueden ahorrarle semanas de dolor.",
+      "visual_queries": [
+        "happy dog running grass",
+        "happy dog outdoors",
+        "dog with owner"
+      ]
+    }
+  ]
+}

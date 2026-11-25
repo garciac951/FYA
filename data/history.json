@@ -525,6 +525,31 @@
           "url": "https://youtube.com/shorts/ArsmUI1s8do"
         }
       }
+    },
+    {
+      "date": "2026-11-24T23:58:11+00:00",
+      "topic": "dogs",
+      "title": "The 7-Second Test That Protects Your Dog's Paws",
+      "idea": null,
+      "run": "32",
+      "redo_of": null,
+      "upload_mode": "scheduled",
+      "versions": {
+        "en": {
+          "title": "The 7-Second Test That Protects Your Dog's Paws",
+          "file": "output/20261124-2357-the-7-second-test-that-protects-your-dog-s-paws/short-en.mp4",
+          "youtube_id": "S03db6AQHL4",
+          "url": "https://youtube.com/shorts/S03db6AQHL4",
+          "publish_at": "2026-11-25T23:00:00+00:00"
+        },
+        "es": {
+          "title": "La prueba de 7 segundos que cuida las patas de tu perro",
+          "file": "output/20261124-2357-the-7-second-test-that-protects-your-dog-s-paws/short-es.mp4",
+          "youtube_id": "DyZvAKbZjwU",
+          "url": "https://youtube.com/shorts/DyZvAKbZjwU",
+          "publish_at": "2026-11-25T01:00:00+00:00"
+        }
+      }
     }
   ]
 }
