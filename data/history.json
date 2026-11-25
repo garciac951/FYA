@@ -550,6 +550,31 @@
           "publish_at": "2026-11-25T01:00:00+00:00"
         }
       }
+    },
+    {
+      "date": "2026-11-25T23:42:06+00:00",
+      "topic": "phone-tips",
+      "title": "Your Group Chats Are Hogging Your Phone Storage",
+      "idea": null,
+      "run": "33",
+      "redo_of": null,
+      "upload_mode": "scheduled",
+      "versions": {
+        "en": {
+          "title": "Your Group Chats Are Hogging Your Phone Storage",
+          "file": "output/20261125-2341-your-group-chats-are-hogging-your-phone-storage/short-en.mp4",
+          "youtube_id": "7TLPcAtpXr8",
+          "url": "https://youtube.com/shorts/7TLPcAtpXr8",
+          "publish_at": "2026-11-26T23:00:00+00:00"
+        },
+        "es": {
+          "title": "Tus chats de grupo se comen la memoria del celular",
+          "file": "output/20261125-2341-your-group-chats-are-hogging-your-phone-storage/short-es.mp4",
+          "youtube_id": "bH91MiogSs8",
+          "url": "https://youtube.com/shorts/bH91MiogSs8",
+          "publish_at": "2026-11-26T01:00:00+00:00"
+        }
+      }
     }
   ]
 }

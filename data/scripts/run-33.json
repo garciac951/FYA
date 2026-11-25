@@ -1,0 +1,100 @@
+{
+  "topic_id": "phone-tips",
+  "title": "Your Group Chats Are Hogging Your Phone Storage",
+  "description": "Every photo, video and voice note sent to you in texts stays on your phone forever by default. Here's how to find the biggest attachments and clear them on iPhone and Android.\n\n#shorts #iphone #techtips",
+  "tags": [
+    "free up phone storage",
+    "iphone storage full",
+    "message attachments storage",
+    "android storage cleanup",
+    "review large attachments",
+    "phone storage tips",
+    "iphone tips",
+    "android tips"
+  ],
+  "title_es": "Tus chats de grupo se comen la memoria del celular",
+  "description_es": "Cada foto, video y nota de voz que te mandan por mensaje se queda guardada para siempre. Así encuentras los archivos más pesados y los borras en iPhone y Android.\n\n#shorts #iphone #trucostecnologicos",
+  "tags_es": [
+    "liberar espacio celular",
+    "almacenamiento lleno iphone",
+    "archivos adjuntos mensajes",
+    "limpiar almacenamiento android",
+    "trucos iphone",
+    "trucos android",
+    "memoria del celular llena"
+  ],
+  "segments": [
+    {
+      "narration": "That group chat full of videos might be eating more storage than all your apps combined.",
+      "narration_es": "Ese chat de grupo lleno de videos puede estar ocupando más espacio que todas tus apps juntas.",
+      "visual_queries": [
+        "group chat phone screen",
+        "texting on smartphone",
+        "smartphone in hand"
+      ]
+    },
+    {
+      "narration": "Every photo, video and voice note anyone sends you gets saved on your phone, and by default it stays there forever.",
+      "narration_es": "Cada foto, video o nota de voz que te mandan se guarda en tu celular, y si no cambias nada, se queda ahí para siempre.",
+      "visual_queries": [
+        "receiving photos phone",
+        "scrolling phone photos",
+        "person using smartphone"
+      ]
+    },
+    {
+      "narration": "On iPhone, open Settings, tap General, then iPhone Storage, then Messages.",
+      "narration_es": "En iPhone, abre Configuración, toca General, luego Almacenamiento del iPhone y después Mensajes.",
+      "visual_queries": [
+        "iphone settings screen",
+        "tapping phone screen",
+        "smartphone close up"
+      ]
+    },
+    {
+      "narration": "Tap Review Large Attachments. You'll see every file sorted by size, with the biggest ones first.",
+      "narration_es": "Toca Revisar archivos adjuntos grandes. Vas a ver todos los archivos ordenados por tamaño, empezando por los más pesados.",
+      "visual_queries": [
+        "scrolling phone list",
+        "finger swiping phone",
+        "smartphone screen"
+      ]
+    },
+    {
+      "narration": "Swipe left on the giant ones to delete them. The conversation itself stays right where it is.",
+      "narration_es": "Desliza a la izquierda sobre los más grandes para borrarlos. La conversación se queda tal como está.",
+      "visual_queries": [
+        "swiping left phone",
+        "thumb swiping smartphone",
+        "hands holding phone"
+      ]
+    },
+    {
+      "narration": "On Android, search Settings for storage, then look for a large files or cleanup option.",
+      "narration_es": "En Android, busca la palabra almacenamiento en Ajustes y luego busca una opción de archivos grandes o de limpieza.",
+      "visual_queries": [
+        "android phone settings",
+        "searching on smartphone",
+        "android phone hand"
+      ]
+    },
+    {
+      "narration": "Back on iPhone, go to Settings, then Messages, and change Keep Messages to one year so the pile never grows back.",
+      "narration_es": "De vuelta en el iPhone, entra a Configuración, luego Mensajes, y cambia Conservar mensajes a un año para que el montón no vuelva a crecer.",
+      "visual_queries": [
+        "calendar pages turning",
+        "phone on desk",
+        "smartphone settings"
+      ]
+    },
+    {
+      "narration": "Your memes were never meant to live forever.",
+      "narration_es": "Tus memes no tenían por qué vivir para siempre.",
+      "visual_queries": [
+        "laughing at phone",
+        "friends looking phone",
+        "person smiling smartphone"
+      ]
+    }
+  ]
+}
