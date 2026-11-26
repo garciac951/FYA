@@ -1,0 +1,102 @@
+{
+  "topic_id": "computer-tips",
+  "title": "Closed the Wrong Tab? This Shortcut Brings It Back",
+  "description": "Press Ctrl+Shift+T on Windows or Command+Shift+T on a Mac to reopen the tab you just closed. Keep pressing it to restore earlier closed tabs, one after another, in order.\n\n#shorts #windows #mac",
+  "tags": [
+    "reopen closed tab",
+    "keyboard shortcuts",
+    "ctrl shift t",
+    "command shift t",
+    "browser tips",
+    "windows 11 tips",
+    "mac tips",
+    "computer shortcuts",
+    "tech tips"
+  ],
+  "title_es": "¿Cerraste la pestaña equivocada? Recupérala así",
+  "description_es": "Presiona Ctrl+Shift+T en Windows o Comando+Shift+T en Mac para volver a abrir la pestaña que acabas de cerrar. Si lo sigues presionando, recuperas las pestañas anteriores en orden.\n\n#shorts #trucostecnologicos #atajosdeteclado",
+  "tags_es": [
+    "reabrir pestaña cerrada",
+    "atajos de teclado",
+    "ctrl shift t",
+    "trucos de windows",
+    "trucos de mac",
+    "trucos del navegador",
+    "trucos de computadora",
+    "consejos de tecnología"
+  ],
+  "segments": [
+    {
+      "narration": "You just closed the tab you needed, and you're about to dig through your history to find it. Don't.",
+      "narration_es": "Acabas de cerrar la pestaña que necesitabas y ya vas a buscarla en el historial. No lo hagas.",
+      "visual_queries": [
+        "closing browser tab",
+        "frustrated laptop user",
+        "person using laptop"
+      ]
+    },
+    {
+      "narration": "On Windows, press Control, Shift, and T. On a Mac, it's Command, Shift, and T.",
+      "narration_es": "En Windows, presiona Control, Shift y T. En Mac, es Comando, Shift y T.",
+      "visual_queries": [
+        "fingers pressing keyboard",
+        "keyboard shortcut keys",
+        "typing on keyboard"
+      ]
+    },
+    {
+      "narration": "The tab you closed pops right back, exactly where it was.",
+      "narration_es": "La pestaña que cerraste vuelve a aparecer, justo donde estaba.",
+      "visual_queries": [
+        "web browser screen",
+        "scrolling website laptop",
+        "laptop screen closeup"
+      ]
+    },
+    {
+      "narration": "It works in all the major browsers, on both Windows 11 and macOS.",
+      "narration_es": "Funciona en los navegadores principales, tanto en Windows 11 como en macOS.",
+      "visual_queries": [
+        "desktop and laptop",
+        "computer screen browsing",
+        "modern computer desk"
+      ]
+    },
+    {
+      "narration": "Here's the part most people miss. Press it again, and the tab you closed before that comes back too.",
+      "narration_es": "Y aquí viene lo que casi nadie sabe. Si lo presionas otra vez, también regresa la pestaña que cerraste antes.",
+      "visual_queries": [
+        "pressing keyboard keys",
+        "hands typing laptop",
+        "laptop keyboard closeup"
+      ]
+    },
+    {
+      "narration": "Keep pressing, and you walk backward through everything you closed, in order.",
+      "narration_es": "Sigue presionando y vas recuperando todo lo que cerraste, en orden.",
+      "visual_queries": [
+        "many browser tabs",
+        "busy computer screen",
+        "working on computer"
+      ]
+    },
+    {
+      "narration": "Even the back button still works, because the page history comes back with it.",
+      "narration_es": "Hasta el botón de atrás sigue funcionando, porque también se recupera el historial de esa página.",
+      "visual_queries": [
+        "clicking mouse closeup",
+        "computer mouse click",
+        "office computer work"
+      ]
+    },
+    {
+      "narration": "So next time a tab vanishes, don't search for it. Just bring it back.",
+      "narration_es": "Así que la próxima vez que se te cierre una pestaña, no la busques. Simplemente tráela de vuelta.",
+      "visual_queries": [
+        "relaxed person laptop",
+        "smiling at laptop",
+        "laptop on desk"
+      ]
+    }
+  ]
+}

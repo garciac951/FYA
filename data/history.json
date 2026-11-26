@@ -575,6 +575,31 @@
           "publish_at": "2026-11-26T01:00:00+00:00"
         }
       }
+    },
+    {
+      "date": "2026-11-26T23:55:53+00:00",
+      "topic": "computer-tips",
+      "title": "Closed the Wrong Tab? This Shortcut Brings It Back",
+      "idea": null,
+      "run": "34",
+      "redo_of": null,
+      "upload_mode": "scheduled",
+      "versions": {
+        "en": {
+          "title": "Closed the Wrong Tab? This Shortcut Brings It Back",
+          "file": "output/20261126-2355-closed-the-wrong-tab-this-shortcut-brings-it-back/short-en.mp4",
+          "youtube_id": "NrzYMw1E9xU",
+          "url": "https://youtube.com/shorts/NrzYMw1E9xU",
+          "publish_at": "2026-11-27T23:00:00+00:00"
+        },
+        "es": {
+          "title": "¿Cerraste la pestaña equivocada? Recupérala así",
+          "file": "output/20261126-2355-closed-the-wrong-tab-this-shortcut-brings-it-back/short-es.mp4",
+          "youtube_id": "6LEKQeaL8g8",
+          "url": "https://youtube.com/shorts/6LEKQeaL8g8",
+          "publish_at": "2026-11-27T01:00:00+00:00"
+        }
+      }
     }
   ]
 }
