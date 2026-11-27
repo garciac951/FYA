@@ -1,0 +1,90 @@
+{
+  "topic_id": "cooking",
+  "title": "Stop Pressing Your Burgers on the Grill",
+  "description": "Smashing a burger mid-cook pushes flavorful fat into the fire and causes flare-ups. A thumb dent in the raw patty keeps it flat without the press.\n\n#cooking #bbq #shorts",
+  "tags": [
+    "burger tips",
+    "grilling mistakes",
+    "how to grill burgers",
+    "juicy burgers",
+    "burger dimple trick",
+    "bbq tips",
+    "cooking mistakes"
+  ],
+  "title_es": "Deja de aplastar tus hamburguesas en el asador",
+  "description_es": "Aplastar la carne mientras se cocina saca la grasa con sabor y provoca llamaradas. Un hoyito con el pulgar en la carne cruda la mantiene plana sin tocarla.\n\n#cocina #parrilla #shorts",
+  "tags_es": [
+    "hamburguesas jugosas",
+    "errores al asar",
+    "consejos de parrilla",
+    "como asar hamburguesas",
+    "truco del pulgar",
+    "carne asada",
+    "errores de cocina"
+  ],
+  "segments": [
+    {
+      "narration": "That sizzle when you press a burger with your spatula is the sound of it drying out.",
+      "narration_es": "Ese chisporroteo cuando aplastas la hamburguesa con la espátula es el sonido de tu carne secándose.",
+      "visual_queries": [
+        "spatula pressing burger",
+        "burger patty grill",
+        "grilling burgers"
+      ]
+    },
+    {
+      "narration": "Pressing squeezes melted fat and juice right into the fire.",
+      "narration_es": "Al aplastarla, la grasa derretida y el jugo se van directo al fuego.",
+      "visual_queries": [
+        "burger juice dripping",
+        "grease dripping grill",
+        "burger on grill"
+      ]
+    },
+    {
+      "narration": "That fat carries much of the flavor, and when it drips, it sparks flare-ups that scorch the outside.",
+      "narration_es": "Esa grasa lleva gran parte del sabor, y cuando cae, levanta llamaradas que queman la carne por fuera.",
+      "visual_queries": [
+        "grill flare up flames",
+        "burger flames grill",
+        "barbecue grill fire"
+      ]
+    },
+    {
+      "narration": "Most people press because the burger puffs up. The edges shrink and tighten faster than the center.",
+      "narration_es": "Casi todos la aplastan porque se infla. Las orillas se encogen y se aprietan más rápido que el centro.",
+      "visual_queries": [
+        "thick burger patty cooking",
+        "burger patty close up",
+        "hamburger cooking"
+      ]
+    },
+    {
+      "narration": "The fix happens before grilling. Press a shallow dent into the middle of each raw patty with your thumb.",
+      "narration_es": "La solución viene antes de asar. Con el pulgar, haz un hoyito poco profundo en el centro de cada carne cruda.",
+      "visual_queries": [
+        "shaping raw burger patty",
+        "raw ground beef patties",
+        "hands forming patties"
+      ]
+    },
+    {
+      "narration": "As it cooks, the dent rises, and the burger finishes flat on its own.",
+      "narration_es": "Mientras se cocina, el hoyito sube y la hamburguesa queda plana solita.",
+      "visual_queries": [
+        "flat burger grill",
+        "burgers grilling close",
+        "grilled hamburger"
+      ]
+    },
+    {
+      "narration": "Cook it to one hundred sixty degrees inside, and keep the spatula for flipping only.",
+      "narration_es": "Cocínala hasta setenta y un grados por dentro, y usa la espátula solo para voltearla.",
+      "visual_queries": [
+        "meat thermometer burger",
+        "flipping burger spatula",
+        "burger grill"
+      ]
+    }
+  ]
+}

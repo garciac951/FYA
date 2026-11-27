@@ -600,6 +600,31 @@
           "publish_at": "2026-11-27T01:00:00+00:00"
         }
       }
+    },
+    {
+      "date": "2026-11-27T23:32:09+00:00",
+      "topic": "cooking",
+      "title": "Stop Pressing Your Burgers on the Grill",
+      "idea": null,
+      "run": "35",
+      "redo_of": null,
+      "upload_mode": "scheduled",
+      "versions": {
+        "en": {
+          "title": "Stop Pressing Your Burgers on the Grill",
+          "file": "output/20261127-2331-stop-pressing-your-burgers-on-the-grill/short-en.mp4",
+          "youtube_id": "xbURcRRxm-o",
+          "url": "https://youtube.com/shorts/xbURcRRxm-o",
+          "publish_at": "2026-11-28T23:00:00+00:00"
+        },
+        "es": {
+          "title": "Deja de aplastar tus hamburguesas en el asador",
+          "file": "output/20261127-2331-stop-pressing-your-burgers-on-the-grill/short-es.mp4",
+          "youtube_id": "5l0c6Qi2YIU",
+          "url": "https://youtube.com/shorts/5l0c6Qi2YIU",
+          "publish_at": "2026-11-28T01:00:00+00:00"
+        }
+      }
     }
   ]
 }
